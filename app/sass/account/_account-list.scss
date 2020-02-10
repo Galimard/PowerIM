@@ -28,7 +28,6 @@
   margin: 12px 0;
   flex-direction: column;
   cursor: pointer;
-
 }
 
 .employee-list-item.active {
@@ -36,9 +35,18 @@
 }
 
 .employee-list-item__wrap {
+  //padding: 15px 20px 0;
   padding: 0 20px;
   display: flex;
   position: relative;
+  //position: sticky;
+  //top: 0;
+  //background: #fff;
+  //z-index: 1;
+  //height: 70px;
+  //padding-top: 15px;
+  //border-top-left-radius: 5px;
+  //border-top-right-radius: 5px;
 }
 
 .employee-list-item.active .employee-sublist {
@@ -64,6 +72,8 @@
   z-index: 1;
   height: 70px;
   padding-top: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .employee-list-item__wrap.sticky::after {
