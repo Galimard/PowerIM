@@ -1,0 +1,218 @@
+.content-nomain {
+  height: auto;
+}
+
+.account {
+  margin-top: 127px;
+  color: #25262a;
+}
+
+.account-container {
+  border-radius: 9px;
+  box-shadow: 0 2px 6px 0 rgba(6, 11, 51, 0.1);
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  padding: 81px 40px 114px;
+  margin-bottom: 176px;
+}
+
+.account__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 64px;
+}
+
+.account__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-audit {
+  width: 61%;
+}
+
+.account-audit__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  padding-bottom: 16px;
+}
+
+.account-audit__title--mb {
+  margin-bottom: 6px;
+}
+
+.account-audit__title-border {
+  font-weight: 400;
+  position: relative;
+}
+
+.account-audit__title-border::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #d8dbe0;
+  position: absolute;
+  bottom: 0;
+}
+
+.account-audit__wrap {
+  margin-top: 5px;
+}
+
+.account-audit__link {
+  display: inline-block;
+  padding: 20px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #25262a;
+  border-bottom: 1px solid rgba(37, 38, 42, 0.3);
+}
+
+.account-audit__link:hover {
+  color: #007aff;
+  border-bottom: 1px solid rgba(0, 122, 255, 0.6);
+  -webkit-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  -moz-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  -ms-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  -o-transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.account-accs {
+  width: 304px;
+  //width: 32%;
+}
+
+.account-accs__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.select-item {
+  padding: 8px 20px;
+  //padding: 0 20px;
+  //margin: 8px 0;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.select-item.active {
+  pointer-events: none;
+}
+
+.select-item.active .select-item__img,
+.select-item.active .select-item-info {
+  opacity: 0.5;
+}
+
+.select-item.active::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 40px;
+  background: #007aff;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.select-item-hover:not(.active):hover {
+  background: #efecff;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.account-accs__add-btn {
+  display: block;
+  width: 192px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 7px -4px #d8dbe0;
+  border: solid 1px #d8dbe0;
+  background: #ffffff;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #25262a;
+  margin-top: 24px;
+}
+
+.account-accs__add-btn:hover {
+  background-image: linear-gradient(to bottom, #ffffff, #efecff);
+}
+
+.account-accs__add-btn:active {
+  background: #ffffff;
+  box-shadow: none;
+}
+
+/*style fo nouser*/
+
+.account-nouser {
+  display: block;
+  height: 50px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border: solid 1px #fbe486;
+  background: #fbe486;
+  position: relative;
+  margin-bottom: -50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #342b06;
+  padding: 10px 40px;
+}
+
+.account-nouser-pd {
+  padding: 129px 40px 114px;
+}
+
+/*end style fo nouser*/
+
+/*style fo herpoymi*/
+
+.delimiter {
+  display: block;
+  width: 264px;
+  height: 1px;
+  background-color: #d8dbe0;
+  margin: 16px auto;
+}
+
+/*end style fo herpoymi*/
+
+@media all and (max-width: 940px) {
+  .account-audit {
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 830px) {
+  .account-container {
+    padding: 60px 20px 80px;
+  }
+}
+
+@media all and (max-width: 750px) {
+
+}

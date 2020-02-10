@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PowerIM</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <span class="yandex"></span>
+      
+      <div class="content content-nomain">
+        <!--фон на главной-->
+        <!--.content__wrap-->
+        <!--    span.content__back-->
+        <!--        svg(height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")-->
+        <!--            title Rectangle-->
+        <!--            desc Created with Sketch.-->
+        <!--            g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")-->
+        <!--                path(d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F")-->
+        
+        <header class="header">
+          <div class="container header-container">
+            
+            
+            <div class="burger"><span class="burger-line line__main"></span><span class="burger-line line__middle"></span><span class="burger-line line__main"></span></div>
+            <div class="burger-menu">
+              <nav>
+                <ul class="burger-menu-list">
+                  <li class="active"><a class="burger-menu-list__link active" href="#">Что анализирует сервис</a></li>
+                  <li><a class="burger-menu-list__link" href="#">Как отозвать доступы</a></li>
+                  <li><a class="burger-menu-list__link" href="#">О нас</a></li>
+                </ul>
+              </nav>
+              <div class="burger-menu-bottom">
+                <p class="burger-menu-bottom__tel">8 495 118-43-66</p>
+                <p class="burger-menu-bottom__time">В будни с 9:00 до 18:00 (МСК +5)</p>
+                <div class="burger-menu-bottom-policy"><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
+              </div>
+            </div>
+            
+            <div class="logo"></div>
+            
+            <div class="menu">
+              <ul class="menu-list">
+                <li><a class="menu__link active" href="#">Что анализирует сервис</a></li>
+                <li><a class="menu__link" href="#">Как отозвать доступы</a></li>
+                <li><a class="menu__link" href="#">О нас</a></li>
+              </ul>
+            </div>
+            
+            <div class="login"><a class="login__text" href="#">Вход</a>
+              
+              <div class="popup-lk">
+                <div class="popup-lk__wrap">
+                  <ul class="popup-lk-list">
+                    <li><a class="popup-lk-list__link" href="#">Войти</a></li>
+                    <li><a class="popup-lk-list__link popup-lk-list__link--logout" href="#">Выйти</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="popup-login" id="login">
+                <div class="popup-login__wrap">
+                  
+                  
+                  <div class="login__title">Вход в личный кабинет</div>
+                  
+                  <form class="login-form" action="#" method="post">
+                    <div class="login-form-item">
+                      <label class="login-form-item__label">Мобильный телефон</label>
+                      <input class="login-form-item__input login-form-item__input--tel" type="text" placeholder="+7 000 000-00-00" name="tel"><span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
+                    </div>
+                    <div class="login-form-item login-form__sms">
+                      <label class="login-form-item__label">Код из SMS</label>
+                      <input class="login-form-item__input login-form-item__input--sms" type="number" placeholder="0000" name="sms_code"><span class="login-form-item__text text-more">Выслать код ещё раз через<span class="timer">20</span> секунд</span><a class="send-more" href="#">Выслать код ещё раз</a>
+                    </div>
+                    <button class="login-form__btn login-form__btn--js" type="submit" name="login">Войти</button>
+                    <p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь<a class="login-form__link" href="#" target="_blank">с политикой обработки персональных данных</a></p>
+                  </form>
+                  
+                  <div class="login-yandex">
+                    <p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
+                    <form action="#" method="post">
+                      <button class="login-form__btn">Подключите...</button>
+                      <!-- <input id="file" type="file" class="login-yandex__btn" name="attach">-->
+                      <!-- <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
+                    </form>
+                    <p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        
+        <div class="account">
+          <div class="container">
+            <div class="account-container">
+              
+              
+              <h1 class="account__title">Личный кабинет</h1>
+              
+              <div class="account__wrap">
+                
+                
+                <div class="account-audit">
+                  <h2 class="account-audit__title account-audit__title-border">Аудиты рекламных кампаний</h2>
+                  <div class="account-audit__wrap">
+                    <ul>
+                      <li><a class="account-audit__link" href="#">Текстово-графические объявления</a></li>
+                      <li><a class="account-audit__link" href="#">Динамические объявления</a></li>
+                      <li><a class="account-audit__link" href="#">Реклама мобильных приложений</a></li>
+                      <li><a class="account-audit__link" href="#">Медийно-контекстный баннер на поиске</a></li>
+                      <li><a class="account-audit__link" href="#">Медийная компания</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="account-accs">
+                  <h2 class="account-audit__title account-audit__title--mb">Аккаунты</h2>
+                  <div class="account-accs__wrap">
+                    
+                    
+                    <h3 class="account-accs__title">Представитель</h3>
+                    
+                    <div class="account-accs-select">
+                      <div class="select-selected select-item js-select-selected">
+                        <div class="select-item__img select-selected__img">
+                          <div class="select-item-img__wrap"><img src="../img/user.svg"></div><span class="select-item__crown"></span>
+                        </div>
+                        <div class="select-item-info select-selected-info">
+                          <p class="select-item-info__name">Afazlyiev</p>
+                          <p class="select-item-info__email">Afazlyiev@yandex.ru</p>
+                        </div>
+                      </div>
+                      <div class="select-list-block">
+                        <ul class="select-list">
+                          <li class="select-item js-select-item active select-item-hover">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div><span class="select-item__crown"></span>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">Afazlyiev</p>
+                              <p class="select-item-info__email">Afazlyiev@yandex.ru</p>
+                            </div>
+                          </li>
+                          <li class="select-item js-select-item select-item-hover">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">petrov_69</p>
+                              <p class="select-item-info__email">petrov_69@yandex.ru</p>
+                            </div>
+                          </li>
+                          <li class="select-item js-select-item select-item-hover">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">ivanov_ia</p>
+                              <p class="select-item-info__email">ivanov_ia@yandex.ru</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="account-accs-employee">
+                      <ul class="employee-list">
+                        <li class="employee-list-item select-item js-employee-list-item">
+                          <div class="employee-list-item__wrap">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">petrov_69</p>
+                              <p class="select-item-info__email">petrov_69@yandex.ru</p>
+                            </div>
+                          </div>
+                          <ul class="employee-sublist">
+                            <li class="employee-list-item select-item employee-list-subitem active">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Samsung</p>
+                                <p class="select-item-info__email">Samsung@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Apple_info</p>
+                                <p class="select-item-info__email">petrApple_infoov_69@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Mvideo_support</p>
+                                <p class="select-item-info__email">Mvideo_support@yandex.ru</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="employee-list-item select-item js-employee-list-item">
+                          <div class="employee-list-item__wrap">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">ivanov_ia</p>
+                              <p class="select-item-info__email">ivanov_ia@yandex.ru</p>
+                            </div>
+                          </div>
+                          <ul class="employee-sublist">
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Mycompany</p>
+                                <p class="select-item-info__email">Mycompany@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Samsung</p>
+                                <p class="select-item-info__email">Samsung@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Apple_info</p>
+                                <p class="select-item-info__email">Apple_info@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Mvideo_support</p>
+                                <p class="select-item-info__email">Mvideo_support@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">ivanov_ia</p>
+                                <p class="select-item-info__email">ivanov_ia@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Samsung</p>
+                                <p class="select-item-info__email">Samsung@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Apple_info</p>
+                                <p class="select-item-info__email">Apple_info@yandex.ru</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="employee-list-item select-item js-employee-list-item">
+                          <div class="employee-list-item__wrap">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">Konstantin88_pr</p>
+                              <p class="select-item-info__email">Konstantin88_pr@yandex.ru</p>
+                            </div>
+                          </div>
+                          <ul class="employee-sublist">
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Samsung</p>
+                                <p class="select-item-info__email">Samsung@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Apple_info</p>
+                                <p class="select-item-info__email">Apple_info@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Mvideo_support</p>
+                                <p class="select-item-info__email">Mvideo_support@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">ivanov_ia</p>
+                                <p class="select-item-info__email">ivanov_ia@yandex.ru</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="employee-list-item select-item js-employee-list-item">
+                          <div class="employee-list-item__wrap">
+                            <div class="select-item__img">
+                              <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                            </div>
+                            <div class="select-item-info">
+                              <p class="select-item-info__name">petrov_69</p>
+                            </div>
+                            <p class="select-item-info__email">petrov_69@yandex.ru</p>
+                          </div>
+                          <ul class="employee-sublist">
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Samsung</p>
+                                <p class="select-item-info__email">Samsung@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Apple_info</p>
+                                <p class="select-item-info__email">Apple_info@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">Mvideo_support</p>
+                                <p class="select-item-info__email">Mvideo_support@yandex.ru</p>
+                              </div>
+                            </li>
+                            <li class="employee-list-item select-item employee-list-subitem">
+                              <div class="select-item__img">
+                                <div class="select-item-img__wrap"><img src="../img/user.svg"></div>
+                              </div>
+                              <div class="select-item-info">
+                                <p class="select-item-info__name">ivanov_ia</p>
+                                <p class="select-item-info__email">ivanov_ia@yandex.ru</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <a class="account-accs__add-btn" href="#">Добавить аккаунт…</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer-top">
+            <div class="footer-top-item footer-top-item1">
+              <p class="footer-top-item__bold">Остались вопросы? Звоните:</p>
+              <p class="footer-top-item__phone">8 495 118-43-66</p>
+              <p class="footer-top-item__text">В будни с 9:00 до 18:00 (МСК +5)</p>
+            </div>
+            <div class="footer-top-item footer-top-item2">
+              <p class="footer-top-item__text">ИНН: 381115999541</p>
+              <p class="footer-top-item__text footer-top-item__text2">ОГРНИП: 318385000008444</p><a class="footer-top-item__link" href="#">Политика конфиденциальности</a><br><a class="footer-top-item__link" href="#">Пользовательское соглашение</a>
+            </div>
+          </div>
+          <div class="footer-bottom">© Power IM 2020 — сервис онлайн аудитов рекламных компаний Яндекс Директ и Google Ads</div>
+        </div>
+      </footer>
+      
+      <div class="popup-overlay"></div>
+      <script src="../js/jquery-3.3.1.min.js"></script>
+      <script src="../js/jquery.nicescroll.min.js"></script>
+      <script src="../js/jquery.validate.min.js"></script>
+      <script src="../js/jquery.mask.min.js"></script>
+      <script src="../js/script.js"></script>
+    </div>
+  </body>
+</html>
