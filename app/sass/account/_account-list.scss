@@ -1,0 +1,128 @@
+.account-accs-employee {
+  max-width: 307px;
+  border-radius: 5px;
+  border: solid 1px #d8dbe0;
+  background: #ffffff;
+  position: relative;
+}
+
+.account-accs-employee::after {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 100%;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px -3px 6px -5px #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.employee-list {
+  max-height: 496px;
+}
+
+.employee-list-item {
+  padding: 4px 0;
+  margin: 12px 0;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.employee-list-item.active {
+  pointer-events: auto;
+}
+
+.employee-list-item__wrap {
+  //padding: 15px 20px 0;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+  //position: sticky;
+  //top: 0;
+  //background: #fff;
+  //z-index: 1;
+  //height: 70px;
+  //padding-top: 15px;
+  //border-top-left-radius: 5px;
+  //border-top-right-radius: 5px;
+}
+
+.employee-list-item.active .employee-sublist {
+  position: relative;
+  top: 15px;
+}
+
+.employee-list-item__wrap::after {
+  content: "";
+  display: block;
+  width: 94%;
+  height: 1px;
+  background: #d8dbe0;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+
+.employee-list-item__wrap.sticky {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  height: 70px;
+  padding-top: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 8px 4px -6px rgba(8, 13, 35, 0.16);
+}
+
+.employee-list-item__wrap.sticky::after {
+  //bottom: 0;
+  display: none;
+}
+
+.employee-sublist {
+  margin-top: 22px;
+}
+
+.employee-list-subitem {
+  flex-direction: row;
+  padding: 3px 20px;
+  cursor: default;
+}
+
+.employee-list-subitem:not(.active):hover {
+  background: #efecff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.employee-list-item.active .select-item__img,
+.employee-list-item.active .select-item-info {
+  opacity: 1;
+}
+
+.employee-list-item.active::before {
+  display: none;
+}
+
+.employee-list-subitem.active::before {
+  display: block;
+  top: 24px;
+  left: 0;
+}
+
+/*style for account-sublist*/
+
+.employee-sublist-scroll {
+  max-height: 496px;
+  margin-top: 0;
+}
+
+/*end style for account-sublist*/
+

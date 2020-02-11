@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PowerIM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <span class="yandex"></span>
+    <div class="content">
+        <div class="content__wrap">
+            <span class="content__back">
+                <svg height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+                    <title>Rectangle</title>
+                    <desc>Created with Sketch.</desc>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F"></path>
+                    </g>
+                </svg>
+            </span>
+        </div>
+            <!------------------------------header-------------------------->
+            <header class="header">
+                <div class="container header-container">
+
+                    <div class="burger">
+                        <span class="burger-line line__main"></span>
+                        <span class="burger-line line__middle"></span>
+                        <span class="burger-line line__main"></span>
+                    </div>
+                    <div class="burger-menu">
+                        <nav>
+                            <ul class="burger-menu-list">
+                                <li class="active"><a href="#" class="burger-menu-list__link active">Что анализирует сервис</a></li>
+                                <li><a href="#" class="burger-menu-list__link">Как отозвать доступы</a></li>
+                                <li><a href="pug/account.html" class="burger-menu-list__link">О нас</a></li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu-bottom">
+                            <p class="burger-menu-bottom__tel">8 495 118-43-66</p>
+                            <p class="burger-menu-bottom__time">В будни с 9:00 до 18:00 (МСК +5)</p>
+                            <div class="burger-menu-bottom-policy">
+                                <a href="#">Политика конфиденциальности</a>
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo"></div>
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="#" class="menu__link active">Что анализирует сервис</a></li>
+                            <li><a href="#" class="menu__link">Как отозвать доступы</a></li>
+                            <li><a href="pug/account.html" class="menu__link">О нас</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="login">
+                        <a href="#" class="login__text">Вход</a>
+
+                        <div class="popup-lk">
+                            <div class="popup-lk__wrap">
+                                <ul class="popup-lk-list">
+                                    <li><a href="#" class="popup-lk-list__link">Войти</a></li>
+                                    <li><a href="#" class="popup-lk-list__link popup-lk-list__link--logout">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="login" class="popup-login">
+                            <div class="popup-login__wrap">
+
+                                <div class="login__title">Вход в личный кабинет</div>
+
+                                <form action="#" method="post" class="login-form">
+                                    <div class="login-form-item">
+                                        <label class="login-form-item__label">Мобильный телефон</label>
+                                        <input type="text" class="login-form-item__input login-form-item__input--tel" placeholder="+7 000 000-00-00" name="tel">
+                                        <span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
+                                    </div>
+                                    <div class="login-form-item login-form__sms">
+                                        <label class="login-form-item__label">Код из SMS</label>
+                                        <input type="number" class="login-form-item__input login-form-item__input--sms" placeholder="0000" name="sms_code">
+                                        <span class="login-form-item__text text-more">Выслать код ещё раз через <span class="timer">20</span> секунд</span>
+                                        <a href="#" class="send-more">Выслать код ещё раз</a>
+                                    </div>
+                                    <button type="submit" class="login-form__btn login-form__btn--js" name="login">Войти</button>
+                                    <p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+                                        <a href="#" class="login-form__link" target="_blank">с политикой обработки персональных данных</a></p>
+                                </form>
+
+                                <div class="login-yandex">
+                                    <p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
+                                    <form action="#" method="post">
+                                        <button class="login-form__btn">Подключите...</button>
+                                        <!--<input id="file" type="file" class="login-yandex__btn" name="attach">-->
+                                        <!--<label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
+                                    </form>
+                                    <p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины
+                                        и&nbsp;пароли остаются на стороне Яндекс.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+            <!------------------------------end header-------------------------->
+
+
+            <!------------------------------main-------------------------->
+            <main class="main">
+                <div class="container audit-container">
+                    <section class="audit">
+                        <h1 class="audit__title">Онлайн аудит рекламных кампаний Яндекс Директ</h1>
+                        <div class="audit-descr">
+                            <p class="audit-descr__title">Обработано 575 рекламных компаний</p>
+                            <p class="audit-descr__subtitle">Найдено ошибок 3861, средний CTR 5% — эффективность 30%</p>
+                        </div>
+                        <div class="notebook-mob">
+                            <div class="notebook-mob__wrap">
+                                <img src="img/audit_2x.jpg">
+                            </div>
+                        </div>
+                        <a href="#" class="audit__btn">Сделать аудит бесплатно</a>
+                        <p class="audit__text">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины
+                            и&nbsp;пароли остаются на стороне Яндекс.</p>
+                    </section>
+                    <div class="notebook-img">
+                        <div class="notebook-img__wrap">
+                            <div class="notebook-img__anim">
+                                <img src="img/audit_2x.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!------------------------------end main-------------------------->
+        </div>
+
+        <!------------------------------footer-------------------------->
+        <footer class="footer">
+            <div class="container footer-container">
+
+                <div class="footer-top">
+                    <div class="footer-top-item footer-top-item1">
+                        <p class="footer-top-item__bold">Остались вопросы? Звоните:</p>
+                        <p class="footer-top-item__phone">8 495 118-43-66</p>
+                        <p class="footer-top-item__text">В будни с 9:00 до 18:00 (МСК +5)</p>
+                    </div>
+                    <div class="footer-top-item footer-top-item2">
+                        <p class="footer-top-item__text">ИНН: 381115999541</p>
+                        <p class="footer-top-item__text footer-top-item__text2">ОГРНИП: 318385000008444</p>
+                        <a href="#" class="footer-top-item__link">Политика конфиденциальности</a><br>
+                        <a href="#" class="footer-top-item__link">Пользовательское соглашение</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    © Power IM 2020 — сервис онлайн аудитов рекламных компаний Яндекс Директ и Google Ads
+                </div>
+
+            </div>
+        </footer>
+        <!------------------------------end footer-------------------------->
+
+</div>
+
+<div class="popup-overlay"></div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

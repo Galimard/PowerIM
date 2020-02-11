@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="64px" viewBox="0 0 56 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PowerIM_Что-анализирует-сервис" transform="translate(-472.000000, -440.000000)">
+            <g id="Group-13" transform="translate(448.000000, 408.000000)">
+                <g id="Group-7" transform="translate(24.000000, 32.000000)">
+                    <rect id="Rectangle-Copy-2" x="0" y="0" width="72" height="64"></rect>
+                    <g id="051-bar-chart-2" fill-rule="nonzero">
+                        <g id="051-bar-chart">
+                            <polygon id="Path" fill="#DD3E2C" points="0.107893333 14.216375 9.98330667 8.46975 19.8279822 14.19675 19.8279822 37.338625 9.98330667 43.085375 0.107893333 37.358375"></polygon>
+                            <polygon id="Path" fill="#FF5541" points="0.107893333 14.216375 9.98330667 8.46975 19.8279822 14.19675 9.98330667 19.943375"></polygon>
+                            <polygon id="Path" fill="#F34935" points="9.98330667 19.943375 9.98330667 43.085375 0.107893333 37.358375 0.107893333 14.216375"></polygon>
+                            <polygon id="Path" fill="#DC9525" points="18.1398933 12.381625 28.0154311 6.635 37.8601067 12.362 37.8601067 47.796 28.0154311 53.542625 18.1398933 47.815625"></polygon>
+                            <polygon id="Path" fill="#FFB540" points="18.1398933 12.381625 28.0154311 6.635 37.8601067 12.362 28.0154311 18.108625"></polygon>
+                            <polygon id="Path" fill="#F0A329" points="28.0154311 18.108625 28.0154311 53.542625 18.1398933 47.815625 18.1398933 12.381625"></polygon>
+                            <polygon id="Path" fill="#412B9F" points="36.1720178 5.74675 46.0474311 0 55.8921067 5.727 55.8921067 58.25325 46.0474311 64 36.1720178 58.273"></polygon>
+                            <polygon id="Path" fill="#5840BB" points="36.1720178 5.74675 46.0474311 0 55.8921067 5.727 46.0474311 11.47375"></polygon>
+                            <polygon id="Path" fill="#4E36B1" points="46.0474311 11.47375 46.0474311 64 36.1720178 58.273 36.1720178 5.74675"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

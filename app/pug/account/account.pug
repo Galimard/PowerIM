@@ -1,0 +1,174 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title PowerIM
+        link(rel="stylesheet" href="../css/style.css")
+    body
+        |
+        .wrapper
+            |
+            |
+            span.yandex
+            |
+            |
+            .content.content-nomain
+                |
+                //фон на главной
+                .content__wrap
+                    span.content__back
+                        svg(height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                            title Rectangle
+                            desc Created with Sketch.
+                            g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+                                path(d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F")
+                |
+                |
+                include ../header
+                |
+                |
+                .account
+                    .container
+                        - var user = true
+                        if user
+                            .account-container
+                                |
+                                |
+                                h1.account__title Личный кабинет
+                                |
+                                |
+                                .account__wrap
+                                    |
+                                    |
+                                    .account-audit
+                                        h2.account-audit__title.account-audit__title-border Аудиты рекламных кампаний
+                                        .account-audit__wrap
+                                            ul
+                                                li
+                                                    a(href="#").account-audit__link Текстово-графические объявления
+                                                li
+                                                    a(href="#").account-audit__link Динамические объявления
+                                                li
+                                                    a(href="#").account-audit__link Реклама мобильных приложений
+                                                li
+                                                    a(href="#").account-audit__link Медийно-контекстный баннер на поиске
+                                                li
+                                                    a(href="#").account-audit__link Медийная компания
+                                    |
+                                    |
+                                    .account-accs
+                                        h2.account-audit__title.account-audit__title--mb Аккаунты
+                                        .account-accs__wrap
+                                            |
+                                            |
+                                            - var agent = true
+                                            - var directolog = false
+                                            - var client = false
+                                            - var herpoymi = false
+                                            if client
+                                                include _account-sublist
+                                            else
+                                                h3.account-accs__title Представитель
+                                                |
+                                                |
+                                                if agent
+                                                    include _account-select
+                                                    include _account-list
+                                                else if directolog
+                                                    include _account-select
+                                                    include _account-sublist
+                                                else
+                                                    include _account-select
+                                                    include _account-sublist
+                                                    span.delimiter
+                                                    //тут по идее другой список должен отображаться, но такой же по стилям
+                                                    include _account-sublist
+                                            |
+                                            |
+                                            a(href="#").account-accs__add-btn Добавить аккаунт…
+                                    |
+                                    |
+                                .account__wrap--mob
+                                    .account-tabs-title
+                                        a(href="#audits").account-tabs-title__link.active Аудиты
+                                        a(href="#accounts").account-tabs-title__link Аккаунты
+                                    .account-tabs
+                                        #audits.account-tabs-block.active
+                                            .account-audit__wrap
+                                                ul
+                                                    li
+                                                        a(href="#").account-audit__link Текстово-графические объявления
+                                                    li
+                                                        a(href="#").account-audit__link Динамические объявления
+                                                    li
+                                                        a(href="#").account-audit__link Реклама мобильных приложений
+                                                    li
+                                                        a(href="#").account-audit__link Медийно-контекстный баннер на поиске
+                                                    li
+                                                        a(href="#").account-audit__link Медийная компания
+                                        #accounts.account-tabs-block
+                                            .account-accs__wrap
+                                                |
+                                                |
+                                                - var agent = true
+                                                - var directolog = false
+                                                - var client = false
+                                                - var herpoymi = false
+                                                if client
+                                                    include _account-sublist
+                                                else
+                                                    h3.account-accs__title Представитель
+                                                    |
+                                                    |
+                                                    if agent
+                                                        include _account-select
+                                                        include _account-list
+                                                    else if directolog
+                                                        include _account-select
+                                                        include _account-sublist
+                                                    else
+                                                        include _account-select
+                                                        include _account-sublist
+                                                        span.delimiter
+                                                        //тут по идее другой список должен отображаться, но такой же по стилям
+                                                        include _account-sublist
+                                                |
+                                                |
+                                                a(href="#").account-accs__add-btn Добавить аккаунт…
+                        else
+                            span.account-nouser Вы вошли в личный кабинет тестового профиля, для использования всех возможностей сервиса зарегистрируйтесь
+                            .account-container.account-nouser-pd
+                                |
+                                |
+                                h1.account__title Личный кабинет
+                                |
+                                |
+                                .account__wrap
+                                    |
+                                    |
+                                    .account-audit
+                                        h2.account-audit__title.account-audit__title-border Аудиты рекламных кампаний
+                                        .account-audit__wrap
+                                            ul
+                                                li
+                                                    a(href="#").account-audit__link Текстово-графические объявления
+                                                li
+                                                    a(href="#").account-audit__link Динамические объявления
+                                                li
+                                                    a(href="#").account-audit__link Реклама мобильных приложений
+                                                li
+                                                    a(href="#").account-audit__link Медийно-контекстный баннер на поиске
+                                                li
+                                                    a(href="#").account-audit__link Медийная компания
+
+            include ../footer
+            |
+            |
+            .popup-overlay
+            script(src='../js/jquery-3.3.1.min.js')
+            script(src="../js/jquery.nicescroll.min.js")
+            script(src='../js/jquery.validate.min.js')
+            script(src='../js/jquery.mask.min.js')
+            script(src='../js/script.js')
