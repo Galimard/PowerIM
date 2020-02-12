@@ -29,14 +29,14 @@ html(lang="ru")
                 include ../header
                 |
                 |
-                .account
+                .account.bg__wrap
                     .container
                         - var user = true
                         if user
-                            .account-container
+                            .content-container
                                 |
                                 |
-                                h1.account__title Личный кабинет
+                                h1.content-container__title.account__title Личный кабинет
                                 |
                                 |
                                 .account__wrap
@@ -49,7 +49,7 @@ html(lang="ru")
                                                 li
                                                     a(href="#").account-audit__link Текстово-графические объявления
                                                 li
-                                                    a(href="#").account-audit__link Динамические объявления
+                                                    a(href="audit.html").account-audit__link Динамические объявления
                                                 li
                                                     a(href="#").account-audit__link Реклама мобильных приложений
                                                 li
@@ -138,8 +138,9 @@ html(lang="ru")
                                                 |
                                                 a(href="#").account-accs__add-btn Добавить аккаунт…
                         else
-                            span.account-nouser Вы вошли в личный кабинет тестового профиля, для использования всех возможностей сервиса зарегистрируйтесь
-                            .account-container.account-nouser-pd
+                            span.nouser Вы вошли в личный кабинет тестового профиля, для использования всех возможностей сервиса
+                                a(href="#").nouser-login зарегистрируйтесь
+                            .account-container.nouser-pd
                                 |
                                 |
                                 h1.account__title Личный кабинет

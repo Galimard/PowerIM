@@ -78,7 +78,6 @@
 }
 
 .employee-list-item__wrap.sticky::after {
-  //bottom: 0;
   display: none;
 }
 
@@ -113,7 +112,7 @@
 
 .employee-list-subitem.active::before {
   display: block;
-  top: 24px;
+  top: 22px;
   left: 0;
 }
 
@@ -126,3 +125,9 @@
 
 /*end style for account-sublist*/
 
+@media all and (max-width: 480px) {
+  .select-selected,
+  .account-accs-employee {
+    max-width: 100%;
+  }
+}

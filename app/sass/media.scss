@@ -102,6 +102,9 @@
 }
 
 @media all and (max-width: 752px) {
+  .bg__wrap {
+    margin-top: 150px;
+  }
   .audit__title {
     font-size: 30px;
   }
@@ -129,7 +132,7 @@
     padding-bottom: 64px;
   }
   .header-container {
-    padding-top: 16px;
+    padding-top: 8px;
     align-items: center;
   }
   .header-container::after {
@@ -138,7 +141,7 @@
   .header {
     position: relative;
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
   }
   .header::after {
     content: "";
@@ -154,16 +157,13 @@
     height: 12px;
     background-size: 100%;
   }
+  .login {
+    top: 0;
+    margin-right: 0;
+  }
   .login__text {
     margin-right: 0;
     font-size: 16px;
-  }
-  .login__text::before {
-    width: 10px;
-    height: 12px;
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    left: -19px;
   }
   .yandex {
     width: 150px;
@@ -246,6 +246,12 @@
 }
 
 @media all and (max-width: 480px) {
+  .bg__wrap {
+    margin-top: 47px;
+  }
+  .bg__wrap::before {
+    display: none;
+  }
   .popup-login {
     width: calc(100vw - 40px);
   }

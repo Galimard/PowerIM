@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     //-----------------login button---------------
-    $('.login__text').on('click', function (e) {
+    $('.login__text, .nouser-login').on('click', function (e) {
        e.preventDefault();
 
        $(this).toggleClass('active');
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('.line__middle').toggleClass('burger-line3');
 
         //для адаптива
-        $('.account-accs-select, .account-audit__title-border, .account-accs-employee, #ascrail2000, #ascrail2005').toggleClass('hide');
+        $('.account-accs-select, .account-audit__title-border, .account-accs-employee, #ascrail2000, #ascrail2005, .account').toggleClass('hide');
 
     });
 
@@ -77,60 +77,44 @@ $(document).ready(function () {
     $('.employee-list, .employee-sublist').niceScroll({
         cursorcolor: "rgba(37, 38, 42, 0.8)",
         cursorwidth: "4px",
-        autohidemode: false,
+        autohidemode: "scroll",
         railpadding: { top: 5, right: 2, left: 0, bottom: 0 },
         zindex: 10,
         cursorborder: "1px solid rgba(37, 38, 42, 0.8)"
     });
 
-    var positions = [], //сюда сложим на загрузке страницы позиции наших "якорных" блоков, чтобы не считать их каждый раз. и сюда же положим ссылки на соответствующие a.scroll-to
-        currentActive = null; //здесь будет храниться id текущего блока, чтобы не менять классы по 100 раз за одну прокрутку
-        blocks = $('.employee-list-item__wrap'); //сохраним массив всех a.scroll-to
-    var listTop = $('.employee-list').offset().top;
+    // var positions = [], //сюда сложим на загрузке страницы позиции наших "якорных" блоков, чтобы не считать их каждый раз. и сюда же положим ссылки на соответствующие a.scroll-to
+    //     currentActive = null; //здесь будет храниться id текущего блока, чтобы не менять классы по 100 раз за одну прокрутку
+    //     blocks = $('.employee-list-item__wrap'); //сохраним массив всех a.scroll-to
+    // var listTop = $('.employee-list').offset().top;
+    //
+    // $(".employee-list-item__wrap").each(function(){ //перебираем блоки, сохраняем позиции и ссылки на пункты меню
+    //     positions.push({
+    //         top: $(this).offset().top,
+    //         blocks: blocks
+    //     });
+    //     // positions.push($(this).offset().top);
+    // });
+    //
+    // positions = positions.reverse();
 
-    $(".employee-list-item__wrap").each(function(){ //перебираем блоки, сохраняем позиции и ссылки на пункты меню
-        positions.push({
-            top: $(this).offset().top,
-            blocks: blocks
-        });
-        // positions.push($(this).offset().top);
-    });
-
-    //делаем реверс массива, чтобы при скролле перебирать его с конца и выходить из цикла при нахождении
-    //зачем нам проверять каждый блок, если прокрутка уже ниже последнего, верно?
-    positions = positions.reverse();
-
-    // $(window).on('scroll',function() {
-    //     var winTop = $(window).scrollTop();
+    // $('.employee-list').on('scroll', function () {
+    //
+    //     var winTop = $('.employee-list').scrollTop();
     //     for(var i = 0; i < positions.length; i++){
+    //
     //         if(positions[i].top < winTop){ //если прокрутка страницы ниже нашего блока
     //             if(currentActive !== i){ //и если мы еще не добавили класс текущему блоку
     //                 currentActive = i;
-    //                 // links.filter('.active').removeClass('active'); //снимаем класс .active с текущего пункта меню
-    //                 positions[i].a.addClass("active");
+    //                 blocks.filter('.sticky').removeClass('sticky'); //снимаем класс .active с текущего пункта меню
+    //                 positions[i].blocks.addClass("sticky");
     //             }
     //             break; //выходим из цикла, не нужно проверять блоки, которые выше
     //         }
     //     }
+    //
+    //     // $('.employee-list-item__wrap').addClass('sticky');
     // });
-
-    $('.employee-list').on('scroll', function () {
-
-        var winTop = $('.employee-list').scrollTop();
-        for(var i = 0; i < positions.length; i++){
-
-            if(positions[i].top < winTop){ //если прокрутка страницы ниже нашего блока
-                if(currentActive !== i){ //и если мы еще не добавили класс текущему блоку
-                    currentActive = i;
-                    blocks.filter('.sticky').removeClass('sticky'); //снимаем класс .active с текущего пункта меню
-                    positions[i].blocks.addClass("sticky");
-                }
-                break; //выходим из цикла, не нужно проверять блоки, которые выше
-            }
-        }
-
-        // $('.employee-list-item__wrap').addClass('sticky');
-    });
 
     //-----------------------------------------employee list-----------------------------------------
     $('.employee-list-subitem').on('click', function () {
@@ -157,7 +141,7 @@ $(document).ready(function () {
             $('.employee-list, .employee-sublist').niceScroll({
                 cursorcolor: "rgba(37, 38, 42, 0.8)",
                 cursorwidth: "4px",
-                autohidemode: false,
+                autohidemode: "scroll",
                 railpadding: { top: 5, right: 2, left: 0, bottom: 0 },
                 zindex: 10,
                 cursorborder: "1px solid rgba(37, 38, 42, 0.8)"
@@ -166,6 +150,33 @@ $(document).ready(function () {
             $(".employee-list, .employee-sublist").getNiceScroll().remove();
         }
     });
+
+    //-----------------------------------всплывашка audit-detail-----------------------------------
+    $('.icon').on('click', function () {
+        var parent = $(this).parent('.info');
+        var positionTop = Math.abs($(parent).position().top - 100),
+            positionLeft1 = Math.abs($(this).position().left),
+            positionLeft2 = 0,
+            posLeft = 0;
+
+        if($(parent).hasClass('table-col-res')) {
+            positionLeft2 = Math.abs($(parent).position().left);
+            posLeft = (624 + positionLeft1);
+            console.log(positionLeft1);
+            console.log(posLeft);
+            $('.icon-text').css({'top': positionTop, 'left': '624px'});
+        }
+
+        if($(parent).hasClass('table-col-name')) {
+            positionLeft1 = Math.abs($(this).position().left);
+            // posLeft = positionLeft1 + positionLeft2;
+            $('.icon-text').css({'top': positionTop, 'left': positionLeft1});
+        }
+
+    });
+
+    //----------------------------------------table audit выпадашка-----------------------------------------
+    
 
 });
 
