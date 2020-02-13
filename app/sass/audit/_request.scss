@@ -1,0 +1,236 @@
+.request {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 9px;
+  border: solid 4px #fbe486;
+  background-color: #ffffff;
+  padding: 46px 70px 62px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.request-text {
+  max-width: 420px;
+}
+
+.request-test__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.17;
+  margin-bottom: 15px;
+}
+
+.request-text__text {
+  line-height: 1.78;
+}
+
+.request-form-block {
+  max-width: 324px;
+  padding-top: 11px;
+}
+
+.request-form__label {
+  line-height: 1.33;
+}
+
+.request-form__span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.request-form__input {
+  width: 298px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px #d8dbe0;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #25262a;
+  padding: 0 16px;
+  margin-top: 11px;
+  margin-bottom: 19px;
+}
+
+.request-form__input:focus {
+  box-shadow: 0 0 0 1px #007aff, 0 0 0 4px rgba(0, 122, 255, 0.5);
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.request-form__input.error {
+  box-shadow: 0 0 0 1px #ff5541, 0 0 0 4px rgba(255, 85, 65, 0.5);
+}
+
+.request-form__input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(37, 38, 42, 0.5);
+}
+
+.request-form__input:-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(37, 38, 42, 0.5);
+}
+
+.request-form__input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(37, 38, 42, 0.5);
+}
+
+.request-form__input:-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(37, 38, 42, 0.5);
+}
+
+.request-form__input:focus::-webkit-input-placeholder {
+  opacity:0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.request-form__input:focus:-moz-placeholder {
+  opacity:0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.request-form__input:focus::-moz-placeholder {
+  opacity:0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.request-form__input:focus:-ms-input-placeholder {
+  opacity:0;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.request-form__checkbox {
+  display: none;
+}
+
+.request-form__span {
+  position: relative;
+  padding-left: 33px;
+}
+
+.request-form__span::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: solid 1px #d8dbe0;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.request-form__checkbox:checked + .request-form__span::before {
+  border: solid 1px #007aff;
+  background: #007aff url("../img/check2.svg") center center no-repeat;
+}
+
+.request-form__btn {
+  margin-top: 27px;
+}
+
+@media all and (max-width: 1020px) {
+  .request {
+    padding: 30px 40px;
+  }
+  .request-test__title {
+    font-size: 40px;
+  }
+  .request-text {
+    margin-right: 20px;
+    min-width: 420px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .request-text {
+    min-width: 350px;
+  }
+  .request-form__input {
+    width: 250px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .request {
+    flex-direction: column;
+  }
+  .request-text {
+    max-width: unset;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .request-test__title {
+    margin-bottom: 5px;
+  }
+  .request-text__text {
+    line-height: 1.2;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .request-test__title {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .request {
+    border-radius: 0;
+    border: none;
+    padding: 0 16px;
+  }
+  .request-test__title {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .request-text__text {
+    font-size: 15px;
+  }
+  .request-form__label, .request-form__span {
+    display: none;
+  }
+  .request-form-block {
+    padding-top: 0;
+  }
+  .request-form__input {
+    margin-top: 0;
+    margin-bottom: 36px;
+    width: 208px;
+  }
+  .request-text {
+    min-width: unset;
+    margin-bottom: 28px;
+  }
+  .request-form__btn {
+    margin: 0;
+  }
+}

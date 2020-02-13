@@ -105,7 +105,7 @@ input::-webkit-inner-spin-button {
 .yandex {
   display: block;
   width: 130px;
-  height: 120px;
+  height: 130px;
   background: url("../img/yandex.svg") top right no-repeat;
   position: absolute;
   top: 0;
@@ -114,7 +114,7 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
-  max-width: 1096px;
+  max-width: 1098px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -125,6 +125,10 @@ input::-webkit-inner-spin-button {
   color: #ffffff;
   height: 100vh;
   position: relative;
+}
+
+.content-nomain {
+  height: auto;
 }
 
 .content__wrap {
@@ -148,7 +152,6 @@ input::-webkit-inner-spin-button {
   background: #412b9f;
   position: absolute;
   top: 0;
-  /*z-index: -1;*/
 }
 
 .popup-overlay {
@@ -161,6 +164,106 @@ input::-webkit-inner-spin-button {
   left: 0;
   z-index: 10;
 }
+
+.bg__wrap {
+  margin-top: 282px;
+  background-color: #f7f7fa;
+  position: relative; /*for bg*/
+}
+
+.bg__wrap::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 32px;
+  background: url("../img/pageup.svg") center top no-repeat;
+  position: absolute;
+  top: -32px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.content-container {
+  border-radius: 9px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(6, 11, 51, 0.1);
+  box-shadow: 0 2px 6px 0 rgba(6, 11, 51, 0.1);
+  border: solid 1px #ffffff;
+  background-color: #ffffff;
+  padding: 81px 40px 114px;
+  position: relative;
+  top: -170px;
+}
+
+.content-container__title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  position: relative;
+  top: 64px;
+}
+
+.breadcrumb__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: #efecff;  
+}
+
+.breadcrumb__link span {
+  border-bottom: 1px solid rgba(239, 236, 255, 0.3);
+  margin-left: 5px;
+}
+
+.breadcrumb__link:hover span {
+  border-bottom: 1px solid rgba(239, 236, 255, 0.6);
+  -webkit-transition: border-bottom-color 0.3s ease;
+  -moz-transition: border-bottom-color 0.3s ease;
+  -ms-transition: border-bottom-color 0.3s ease;
+  -o-transition: border-bottom-color 0.3s ease;
+  transition: border-bottom-color 0.3s ease;
+}
+
+/*style fo nouser*/
+
+.nouser {
+  display: block;
+  height: 50px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border: solid 1px #fbe486;
+  background: #fbe486;
+  position: relative;
+  margin-bottom: -50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #342b06;
+  padding: 10px 40px;
+}
+
+.nouser-pd {
+  padding: 129px 40px 114px;
+}
+
+.nouser-login {
+  margin-left: 5px;
+  color: #342b06;
+  border-bottom: 1px dashed rgba(52, 43, 6, 0.3);
+}
+
+.nouser-login:hover {
+  border-bottom: 1px dashed rgba(52, 43, 6, 0.6);
+  -webkit-transition: border-bottom-color 0.3s ease;
+  -moz-transition: border-bottom-color 0.3s ease;
+  -ms-transition: border-bottom-color 0.3s ease;
+  -o-transition: border-bottom-color 0.3s ease;
+  transition: border-bottom-color 0.3s ease;
+}
+
+/*end style fo nouser*/
 /*общие стили*/
 
 /*----------------------------------------------header-------------------------------------------*/
@@ -181,7 +284,7 @@ input::-webkit-inner-spin-button {
   height: 1px;
   background: #4e37ae;
   position: absolute;
-  bottom: -20px;
+  bottom: -5px;
 }
 
 .burger {
@@ -242,7 +345,7 @@ input::-webkit-inner-spin-button {
   top: 50px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background: #412b9f;
   z-index: 20;
   padding: 32px 0;
@@ -259,7 +362,10 @@ input::-webkit-inner-spin-button {
 }
 
 .header.fixed {
-  position: relative;
+  position: fixed;
+  //position: relative;
+  background: #5840bb;
+  width: 100%;
 }
 
 .burger-menu-list li {
@@ -321,6 +427,7 @@ input::-webkit-inner-spin-button {
 }
 
 .logo {
+  display: block;
   width: 120px;
   height: 16px;
   background: url("../img/logo.svg") center center no-repeat;
@@ -335,8 +442,7 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-.menu__link,
-.login__text {
+.menu__link {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
@@ -367,42 +473,49 @@ input::-webkit-inner-spin-button {
 .login {
   position: relative;
   z-index: 11;
+  margin-right: 32px;
+  top: -8px;
 }
 
 .login__text {
-  line-height: 1.1;
-  margin-right: 40px;
-  border-bottom: 1px dashed rgba(239, 236, 255, 0.3);
-  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  //line-height: 1.1;
+  //margin-right: 40px;
+  //border-bottom: 1px dashed rgba(239, 236, 255, 0.3);
+  //-webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  //-moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  //-ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  //-o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  //transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  display: block;
+  width: 65px;
+  height: 36px;
+  background: url("../img/arrow2.svg") right center no-repeat;
   position: relative;
 }
 
-.login__text:hover,
-.login__text:active,
-.login__text.active {
-  border-bottom: 1px dashed rgba(255, 181, 64, 0.6);
-  color: #ffb540;
-  cursor: pointer;
-  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  transition: border-bottom-color 0.3s ease, color 0.3s ease;
-}
+//.login__text:hover,
+//.login__text:active,
+//.login__text.active {
+//  border-bottom: 1px dashed rgba(255, 181, 64, 0.6);
+//  color: #ffb540;
+//  cursor: pointer;
+//  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+//  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+//  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+//  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+//  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+//}
 
 .login__text::before {
   content: "";
   display: block;
-  width: 12px;
-  height: 14px;
-  background: url("../img/user.svg") center center no-repeat;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f7f7fa url("../img/user(1).svg") center center no-repeat;
   position: absolute;
-  top: 4px;
-  left: -24px;
+  top: 0;
+  left: 0;
 }
 
 /*main*/
@@ -787,7 +900,8 @@ input::-webkit-inner-spin-button {
 }
 
 .popup-login.open {
-  top: 39px;
+  top: 50px;
+  right: 18px;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
@@ -862,7 +976,7 @@ input::-webkit-inner-spin-button {
 .login-form-item__input:focus {
   box-shadow: 0 0 0 1px #007aff, 0 0 0 4px rgba(0, 122, 255, 0.5);
   outline: none;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .login-form-item__input::-webkit-input-placeholder {
@@ -931,17 +1045,12 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-/*.login-form-item__input.val.error {*/
-/*box-shadow: 0 0 0 1px #ff5541, 0 0 0 4px rgba(255, 85, 65, 0.5);*/
-/*}*/
-/**/
 .login-form-item__input.error {
   box-shadow: 0 0 0 1px #ff5541, 0 0 0 4px rgba(255, 85, 65, 0.5);
 }
 
 .login-form-item__input--tel.error + .text-sms {
   display: block;
-  /*display: none !important;*/
   font-family:  'IBMPlexSans', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1134,20 +1243,15 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-//.login-yandex__btn {
-//  width: 0.1px;
-//  height: 0.1px;
-//  opacity: 0;
-//  overflow: hidden;
-//  position: absolute;
-//  z-index: -1;
-//}
-//
-//.login-yandex-btn__label {
-//  display: block;
-//}
+.hide {
+  z-index: -1;
+}
 
 @import 'account/account';
 @import 'account/account-select';
 @import 'account/account-list';
+@import 'audit/audit';
+@import 'audit/efficiency';
+@import 'audit/audit-detail';
+@import 'audit/request';
 @import 'media';

@@ -73,6 +73,10 @@
     max-width: 312px; } }
 
 @media all and (max-width: 752px) {
+  .bg__wrap {
+    margin-top: 150px; }
+  .breadcrumb {
+    top: 0; }
   .audit__title {
     font-size: 30px; }
   .audit__btn {
@@ -88,11 +92,23 @@
     font-size: 16px; } }
 
 @media all and (max-width: 600px) {
+  .content-container {
+    border-radius: 0;
+    padding: 45px 20px 64px;
+    top: -100px; }
+  .content-container__title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    /*audit*/ }
   .content {
     height: auto;
     padding-bottom: 64px; }
+  .content-nomain {
+    padding-bottom: 0; }
+  .breadcrumb {
+    top: 11px; }
   .header-container {
-    padding-top: 16px;
+    padding-top: 8px;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -102,7 +118,7 @@
   .header {
     position: relative;
     width: 100%;
-    padding-bottom: 15px; }
+    padding-bottom: 8px; }
   .header::after {
     content: "";
     display: block;
@@ -115,14 +131,12 @@
     width: 90px;
     height: 12px;
     background-size: 100%; }
+  .login {
+    top: 0;
+    margin-right: 0; }
   .login__text {
     margin-right: 0;
     font-size: 16px; }
-  .login__text::before {
-    width: 10px;
-    height: 12px;
-    background-size: 100%;
-    left: -19px; }
   .yandex {
     width: 150px;
     background: url("../img/yandex(1).svg") top right no-repeat;
@@ -194,6 +208,13 @@
     right: 0; } }
 
 @media all and (max-width: 480px) {
+  .content-container {
+    top: 0;
+    padding: 45px 0 64px; }
+  .bg__wrap {
+    margin-top: 47px; }
+  .bg__wrap::before {
+    display: none; }
   .popup-login {
     width: -webkit-calc(100vw - 40px);
     width: calc(100vw - 40px); }

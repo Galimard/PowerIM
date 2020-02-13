@@ -1,31 +1,19 @@
-.content-nomain {
-  height: auto;
-}
-
 .account {
-  margin-top: 127px;
   color: #25262a;
-}
-
-.account-container {
-  border-radius: 9px;
-  box-shadow: 0 2px 6px 0 rgba(6, 11, 51, 0.1);
-  border: solid 1px #ffffff;
-  background-color: #ffffff;
-  padding: 81px 40px 114px;
-  margin-bottom: 176px;
+  padding-bottom: 20px;
 }
 
 .account__title {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.2;
   margin-bottom: 64px;
 }
 
 .account__wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.account__wrap--mob {
+  display: none;
 }
 
 .account-audit {
@@ -91,7 +79,7 @@
 }
 
 .account-accs__title {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.33;
@@ -143,7 +131,7 @@
 .account-accs__add-btn {
   display: block;
   width: 192px;
-  height: 40px;
+  height: 43px;
   border-radius: 4px;
   box-shadow: 0 4px 7px -4px #d8dbe0;
   border: solid 1px #d8dbe0;
@@ -153,7 +141,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #25262a;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .account-accs__add-btn:hover {
@@ -164,30 +152,6 @@
   background: #ffffff;
   box-shadow: none;
 }
-
-/*style fo nouser*/
-
-.account-nouser {
-  display: block;
-  height: 50px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  border: solid 1px #fbe486;
-  background: #fbe486;
-  position: relative;
-  margin-bottom: -50px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #342b06;
-  padding: 10px 40px;
-}
-
-.account-nouser-pd {
-  padding: 129px 40px 114px;
-}
-
-/*end style fo nouser*/
 
 /*style fo herpoymi*/
 
@@ -214,5 +178,89 @@
 }
 
 @media all and (max-width: 750px) {
+  .account-container {
+    padding: 45px 0 48px;
+    top: -100px;
+  }
+  .account__title {
+    font-size: 30px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+  .account__wrap,
+  .account-tabs-block {
+    display: none;
+  }
+  .account__wrap--mob {
+    display: block;
+  }
+  .account-tabs-block.active {
+    display: block;
+  }
+  .account-tabs-title {
+    box-shadow: 0 3px 6px -2px rgba(6, 11, 51, 0.16);
+    background-color: #ffffff;
+    padding: 0 20px;
+  }
+  .account-tabs-title__link {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #007aff;
+    margin-right: 24px;
+    height: 40px;
+  }
+  .account-tabs-title__link.active {
+    color: #25262a;
+    border-bottom: 2px solid #007aff;
+  }
+  .account-tabs {
+    padding: 0 20px;
+  }
+  .account-audit__wrap {
+    margin-top: 10px;
+  }
+  .account-accs__wrap {
+    margin-top: 22px;
+  }
+}
 
+@media all and (max-width: 600px) {
+  .account {
+    padding-bottom: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .account .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .account-container {
+    border-radius: 0;
+    margin-bottom: 40px;
+    top: 0;
+  }
+  .account__title {
+    font-size: 20px;
+  }
+  .account-audit__wrap {
+    margin-top: 25px;
+  }
+  .account-tabs-title__link,
+  .account-accs__title {
+    font-size: 16px;
+  }
+  .select-selected,
+  .account-accs-employee {
+    max-width: 100%;
+  }
+  .account-audit__link {
+    display: inline;
+    line-height: 1.4;
+  }
+  .account-audit__wrap li {
+    margin: 18px 0;
+  }
 }
