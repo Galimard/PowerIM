@@ -3,12 +3,19 @@ h2.audit-s__subtitle Оценка эффективности
 |
 .audit-s-efficiency
     |
-    |
     .audit-s-efficiency-item
-        .audit-s-efficiency-item-percent
+        .audit-s-efficiency-item-percent.green
+            span.percentage 60%
+            svg(viewBox="0 0 36 36" class="circular-chart green")
+                path(class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
+                path(class="circle" stroke-dasharray="60, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
         .audit-s-efficiency-item__text Качество рекламной кампании
     |
     |
     .audit-s-efficiency-item
-        .audit-s-efficiency-item-percent
+        .audit-s-efficiency-item-percent.red
+            span.percentage 52%
+                svg(viewBox="0 0 36 36" class="circular-chart red")
+                    path(class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
+                    path(class="circle" stroke-dasharray="52, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831")
         .audit-s-efficiency-item__text Охват рекламной кампании

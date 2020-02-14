@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('.line__middle').toggleClass('burger-line3');
 
         //для адаптива
-        $('.account-accs-select, .account-audit__title-border, .account-accs-employee, #ascrail2000, #ascrail2005, .account').toggleClass('hide');
+        $('.account-accs-select, .account-audit__title-border, .account-accs-employee, #ascrail2000, #ascrail2005, .account, .audit-s, .breadcrumb').toggleClass('hide');
 
     });
 
@@ -176,7 +176,26 @@ $(document).ready(function () {
     });
 
     //----------------------------------------table audit выпадашка-----------------------------------------
-    
+    $('.table-row').on('click', function () {
+        var height = $(this).next('.table-down').innerHeight() + 528;
+        var heightTable = $('.audit-s-table').innerHeight();
+
+       $(this).next('.table-down').slideToggle(300);
+        $(this).find('.arrow').toggleClass('cross');
+       // $('.audit-s-table').addClass('open');
+       //  $(this).next('.table-down').addClass('open');
+       //
+       //  if($('.audit-s-table').hasClass('open')) {
+       //      $(".table-down.open").each(function(){
+       //
+       //      });
+       //      $('.audit-s-table').css('max-height', height);
+       //  } else {
+       //      $('.audit-s-table').css('max-height', '528px');
+       //  }
+
+    });
+
 
 });
 

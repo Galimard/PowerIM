@@ -127,6 +127,10 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
+.content-nomain {
+  height: auto;
+}
+
 .content__wrap {
   position: relative;
 }
@@ -1239,7 +1243,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.account-accs-select.hide, .account-audit__title-border.hide, .account-accs-employee.hide, #ascrail2000.hide, .account.hide {
+.hide {
   z-index: -1;
 }
 
