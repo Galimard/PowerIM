@@ -242,6 +242,8 @@ input::-webkit-inner-spin-button {
   line-height: 1.5;
   color: #342b06;
   padding: 10px 40px;
+  top: -170px;
+  z-index: 1;
 }
 
 .nouser-pd {
@@ -275,6 +277,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   padding-top: 40px;
   position: relative;
+  padding-bottom: 15px;
 }
 
 .header-container::after {
@@ -477,15 +480,46 @@ input::-webkit-inner-spin-button {
   top: -8px;
 }
 
-.login__text {
-  //line-height: 1.1;
-  //margin-right: 40px;
-  //border-bottom: 1px dashed rgba(239, 236, 255, 0.3);
-  //-webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  //-moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  //-ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  //-o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-  //transition: border-bottom-color 0.3s ease, color 0.3s ease;
+.login__text.login {
+  line-height: 1.1;
+  margin-right: 10px;
+  color: #efecff;
+  border-bottom: 1px dashed rgba(239, 236, 255, 0.3);
+  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  font-size: 18px;
+  position: relative;
+  top: 8px;
+}
+
+.login__text.login::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 14px;
+  background: url("../img/user.svg") center center no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -25px;
+}
+
+.login__text.login:hover,
+.login__text.login:active,
+.login__text.login.active {
+  border-bottom: 1px dashed rgba(255, 181, 64, 0.6);
+  color: #ffb540;
+  cursor: pointer;
+  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
+  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+}
+
+.login__text.register {
   display: block;
   width: 65px;
   height: 36px;
@@ -493,20 +527,11 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-//.login__text:hover,
-//.login__text:active,
-//.login__text.active {
-//  border-bottom: 1px dashed rgba(255, 181, 64, 0.6);
-//  color: #ffb540;
-//  cursor: pointer;
-//  -webkit-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-//  -moz-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-//  -ms-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-//  -o-transition: border-bottom-color 0.3s ease, color 0.3s ease;
-//  transition: border-bottom-color 0.3s ease, color 0.3s ease;
-//}
+.login__text.register span {
+  display: none;
+}
 
-.login__text::before {
+.login__text.register::before {
   content: "";
   display: block;
   width: 36px;
@@ -522,7 +547,7 @@ input::-webkit-inner-spin-button {
 .main {
   position: relative;
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-72%);
 }
 
 .audit-container {
@@ -570,28 +595,6 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.notebook-mob {
-  display: none;
-  width: 272px;
-  height: 192px;
-  border-radius: 9px;
-  border: solid 1px #f0f0f7;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 8px;
-  margin: 0 auto;
-}
-
-.notebook-mob__wrap {
-  width: 100%;
-  height: 100%;
-  border: solid 1px #f0f0f7;
-  overflow: hidden;
-}
-
-.notebook-mob__wrap img {
-  width: 100%;
 }
 
 .audit__btn {
@@ -660,28 +663,61 @@ input::-webkit-inner-spin-button {
   left: -18px;
 }
 
-.notebook-img {
-  width: 50%;
+@keyframes scrollMob {
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  90% {
+    -webkit-transform: translateY(-330px);
+    -moz-transform: translateY(-330px);
+    -ms-transform: translateY(-330px);
+    -o-transform: translateY(-330px);
+    transform: translateY(-330px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
-.notebook-img__wrap {
-  width: 562px;
-  height: 350px;
-  background: url("../img/monitor.svg") center center no-repeat;
-  position: relative;
-  top: 11px;
-  left: 11px;
-  background-size: contain;
+.notebook-mob {
+  display: none;
+  width: 272px;
+  height: 192px;
+  border-radius: 9px;
+  border: solid 1px #f0f0f7;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+  margin: 0 auto;
 }
 
-.notebook-img__anim {
-  border: 2px solid white;
+.notebook-mob__wrap {
+  width: 100%;
+  height: 100%;
+  border: solid 1px #f0f0f7;
+}
+
+.notebook-mob__anim {
   overflow: hidden;
-  width: 435px;
-  height: 292px;
+  width: 252px;
+  height: 172px;
   position: absolute;
-  top: 18px;
-  left: 63px;
+}
+
+.notebook-mob__anim img {
+  width: 100%;
+  -webkit-animation: scrollMob 3s;
+  -o-animation: scrollMob 3s;
+  animation: scrollMob 3s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes scroll {
@@ -708,12 +744,35 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.notebook-img {
+  width: 50%;
+}
+
+.notebook-img__wrap {
+  width: 562px;
+  height: 350px;
+  background: url("../img/monitor.svg") center center no-repeat;
+  position: relative;
+  top: 11px;
+  left: 11px;
+  background-size: contain;
+}
+
+.notebook-img__anim {
+  border: 2px solid white;
+  overflow: hidden;
+  width: 435px;
+  height: 292px;
+  position: absolute;
+  top: 18px;
+  left: 63px;
+}
+
 .notebook-img__anim img {
   width: 100%;
   -webkit-animation: scroll 3s;
   -o-animation: scroll 3s;
   animation: scroll 3s;
-  /*animation: scroll 3s infinite;*/
   animation-delay: 1s;
   animation-fill-mode: backwards;
 }
@@ -1254,4 +1313,6 @@ input::-webkit-inner-spin-button {
 @import 'audit/efficiency';
 @import 'audit/audit-detail';
 @import 'audit/request';
+@import 'analysis/analysis';
+@import 'service/service';
 @import 'media';

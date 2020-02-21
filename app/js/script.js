@@ -196,6 +196,23 @@ $(document).ready(function () {
 
     });
 
+    //слайдер на странице service
+    $('.service-slider').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        // appendArrows: $('.partners-slider__arrows'),
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
 
 });
 

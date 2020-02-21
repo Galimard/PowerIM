@@ -1,0 +1,97 @@
+.analysis {
+  color: #25262a;
+}
+
+.analysis__title {
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.analysis-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.analysis-block-item {
+  max-width: 304px;
+  height: 264px;
+  padding: 118px 24px 32px;
+  position: relative;
+  border-radius: 9px;
+  background: #f0f0f7;
+}
+
+.analysis-block-item::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 64px;
+  position: absolute;
+  top: 32px;
+  left: 24px;
+}
+
+.camp::before {
+  background: url("../img/img1.svg") center bottom no-repeat;
+}
+
+.effect::before {
+  background: url("../img/img2.svg") left center no-repeat;
+}
+
+.links::before {
+  background: url("../img/img3.svg") left center no-repeat;
+}
+
+.announs::before {
+  background: url("../img/img4.svg") center bottom no-repeat;
+}
+
+.param::before {
+  background: url("../img/img5.svg") center bottom no-repeat;
+}
+
+.camp,
+.effect {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.links {
+  margin-bottom: 32px;
+}
+
+.announs {
+  margin-right: 32px;
+}
+
+.analysis-block-item__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  margin-bottom: 8px;
+}
+
+.analysis-block-item__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media all and (max-width: 1196px) {
+  .links {
+    margin-right: 32px;
+  }
+  .effect, .announs {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .analysis-block {
+    justify-content: center;
+  }
+  .announs {
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,93 @@
+.service {
+  color: #25262a;
+}
+
+.service__title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.service__text-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: center;
+  color: #292929;
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+
+.service-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 99px;
+}
+
+.service-block-item {
+  width: 304px;
+  height: 131px;
+  padding-top: 75px;
+  text-align: center;
+  position: relative;
+}
+
+.service-block-item::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.brain::before {
+  background: url("../img/ico1.svg") center center no-repeat;
+}
+
+.hands::before {
+  background: url("../img/ico2.svg") center center no-repeat;
+}
+
+.xman::before {
+  background: url("../img/ico3.svg") center center no-repeat;
+}
+
+.service-block-item__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+.brain .service-block-item__text  {
+  padding: 0 10px;
+}
+
+.service__subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.service-slider {
+  width: 100%;
+  height: 50px;
+  outline: 1px solid red;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  width: 100%;
+  height: 50px;
+}
+
+.service-slider-item {
+  outline: 1px solid green;
+  width: 200px;
+  height: 40px;
+}

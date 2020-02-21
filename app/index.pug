@@ -1,0 +1,54 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    title PowerIM
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='sass/style.scss')
+.wrapper
+    span.yandex
+    .content
+        //фон на главной
+        .content__wrap
+            span.content__back
+                svg(height='100%' viewbox='0 0 388 800' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+                    // Generator: Sketch 61.2 (89653) - https://sketch.com
+                    title Rectangle
+                    desc Created with Sketch.
+                    g#Page-1(stroke='none' stroke-width='1' fill='none' fill-rule='evenodd')
+                        path#Rectangle(d='M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z' fill='#412B9F')
+        // ----------------------------header------------------------
+        include header
+
+        // ----------------------------end header------------------------
+        // ----------------------------main------------------------
+        main.main
+            .container.audit-container
+                section.audit
+                    h1.audit__title Онлайн аудит рекламных кампаний Яндекс Директ
+                    .audit-descr
+                        p.audit-descr__title Обработано 575 рекламных компаний
+                        p.audit-descr__subtitle Найдено ошибок 3861, средний CTR 5% — эффективность 30%
+                    .notebook-mob
+                        .notebook-mob__wrap
+                            .notebook-mob__anim
+                                img(src='img/audit_2x.jpg')
+                    a.audit__btn(href='#') Сделать аудит бесплатно
+                    p.audit__text
+                        | Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.
+                .notebook-img
+                    .notebook-img__wrap
+                        .notebook-img__anim
+                            img(src='img/audit_2x.jpg')
+        // ----------------------------end main------------------------
+    // ----------------------------footer------------------------
+    include footer
+
+    // ----------------------------end footer------------------------
+.popup-overlay
+script(src='js/jquery-3.3.1.min.js')
+script(src='js/jquery.nicescroll.min.js')
+script(src='js/jquery.validate.min.js')
+script(src='js/jquery.mask.min.js')
+script(src='js/script.js')

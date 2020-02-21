@@ -47,9 +47,9 @@ html(lang="ru")
                                 |
                                 |
                                 .audit-s__wrap
-                                    include _efficiency
-                                    include _audit-detail
-                                    include _request
+                                    include audit/_efficiency
+                                    include audit/_audit-detail
+                                    include audit/_request
                         else
                             .content-container
                                 |
@@ -59,15 +59,13 @@ html(lang="ru")
                                 |
                                 |
                                 .audit-s__wrap
-                                    include _efficiency
-                                    include _audit-detail
-                                    include _request
+                                    include audit/_efficiency
+                                    include audit/_audit-detail
+                                    include audit/_request
             include ../footer
-                |
-                |
-                .popup-overlay
-                script(src='../js/jquery-3.3.1.min.js')
-                script(src="../js/jquery.nicescroll.min.js")
-                script(src='../js/jquery.validate.min.js')
-                script(src='../js/jquery.mask.min.js')
-                script(src='../js/script.js')
+        .popup-overlay
+        script(src='../js/jquery-3.3.1.min.js')
+        script(src="../js/jquery.nicescroll.min.js")
+        script(src='../js/jquery.validate.min.js')
+        script(src='../js/jquery.mask.min.js')
+        script(src='../js/script.js')

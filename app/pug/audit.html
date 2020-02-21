@@ -1,383 +1,357 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>PowerIM</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      
-      <span class="yandex"></span>
-      
-      <div class="content content-nomain">
-        <!--фон на главной-->
-        <div class="content__wrap"><span class="content__back">
-            <svg height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>Rectangle</title>
-              <desc>Created with Sketch.</desc>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <path d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F"></path>
-              </g>
-            </svg></span></div>
-        
-        <header class="header">
-          <div class="container header-container">
-            
-            
-            <div class="burger"><span class="burger-line line__main"></span><span class="burger-line line__middle"></span><span class="burger-line line__main"></span></div>
-            <div class="burger-menu">
-              <nav>
-                <ul class="burger-menu-list">
-                  <li class="active"><a class="burger-menu-list__link active" href="#">Что анализирует сервис</a></li>
-                  <li><a class="burger-menu-list__link" href="#">Как отозвать доступы</a></li>
-                  <li><a class="burger-menu-list__link" href="#">О нас</a></li>
-                </ul>
-              </nav>
-              <div class="burger-menu-bottom">
-                <p class="burger-menu-bottom__tel">8 495 118-43-66</p>
-                <p class="burger-menu-bottom__time">В будни с 9:00 до 18:00 (МСК +5)</p>
-                <div class="burger-menu-bottom-policy"><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
-              </div>
-            </div>
-            <a class="logo" href="../index.html"></a>
-            
-            <div class="menu">
-              <ul class="menu-list">
-                <li><a class="menu__link active" href="#">Что анализирует сервис</a></li>
-                <li><a class="menu__link" href="#">Как отозвать доступы</a></li>
-                <li><a class="menu__link" href="account.html">О нас</a></li>
-              </ul>
-            </div>
-            
-            <div class="login"><a class="login__text" href="#"></a>
-              
-              <div class="popup-lk">
-                <div class="popup-lk__wrap">
-                  <ul class="popup-lk-list">
-                    <li><a class="popup-lk-list__link" href="#">Войти</a></li>
-                    <li><a class="popup-lk-list__link popup-lk-list__link--logout" href="#">Выйти</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="popup-login" id="login">
-                <div class="popup-login__wrap">
-                  
-                  
-                  <div class="login__title">Вход в личный кабинет</div>
-                  
-                  <form class="login-form" action="#" method="post">
-                    <div class="login-form-item">
-                      <label class="login-form-item__label">Мобильный телефон</label>
-                      <input class="login-form-item__input login-form-item__input--tel" type="text" placeholder="+7 000 000-00-00" name="tel"><span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
-                    </div>
-                    <div class="login-form-item login-form__sms">
-                      <label class="login-form-item__label">Код из SMS</label>
-                      <input class="login-form-item__input login-form-item__input--sms" type="number" placeholder="0000" name="sms_code"><span class="login-form-item__text text-more">Выслать код ещё раз через<span class="timer">20</span> секунд</span><a class="send-more" href="#">Выслать код ещё раз</a>
-                    </div>
-                    <button class="login-form__btn login-form__btn--js" type="submit" name="login">Войти</button>
-                    <p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь<a class="login-form__link" href="#" target="_blank">с политикой обработки персональных данных</a></p>
-                  </form>
-                  
-                  <div class="login-yandex">
-                    <p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
-                    <form action="#" method="post">
-                      <button class="login-form__btn">Подключите...</button>
-                      <!-- <input id="file" type="file" class="login-yandex__btn" name="attach">-->
-                      <!-- <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
-                    </form>
-                    <p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-        
-        <div class="breadcrumb">
-          <div class="container"><a class="breadcrumb__link" href="account.html">←<span>К рекламным кампаниям</span></a></div>
-        </div>
-        <div class="audit-s bg__wrap">
-          <div class="container audit-container">
-            <div class="content-container">
-              
-              
-              <h1 class="content-container__title">Аудит рекламной компании: Динамические объявления</h1><span class="audit-s__title-text">за 20 января 2020</span>
-              
-              <div class="audit-s__wrap">
-                <h2 class="audit-s__subtitle">Оценка эффективности</h2>
-                
-                <div class="audit-s-efficiency">
-                  
-                  
-                  <div class="audit-s-efficiency-item">
-                    <div class="audit-s-efficiency-item-percent green">
-                      <span class="percentage">60%</span>
-                      <svg viewBox="0 0 36 36" class="circular-chart green">
-                        <path class="circle-bg"
-                              d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <path class="circle"
-                              stroke-dasharray="60, 100"
-                              d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                      </svg>
-                    </div>
-                    <div class="audit-s-efficiency-item__text">Качество рекламной кампании</div>
-                  </div>
-                  
-                  <div class="audit-s-efficiency-item">
-                    <div class="audit-s-efficiency-item-percent red">
-                      <span class="percentage">52%</span>
-                      <svg viewBox="0 0 36 36" class="circular-chart red">
-                        <path class="circle-bg"
-                              d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                        <path class="circle"
-                              stroke-dasharray="52, 100"
-                              d="M18 2.0845
-          a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                        />
-                      </svg>
-                    </div>
-                    <div class="audit-s-efficiency-item__text">Охват рекламной кампании</div>
-                  </div>
-                </div>
-                <h2 class="audit-s__subtitle">Подробный аудит</h2>
-                
-                <div class="icon-text">
-                  <div class="icon-text__wrap">CTR&nbsp;&mdash; Показатель кликабельности баннеров или других рекламных объявлений. Рассчитывается как процентное отношение числа кликов по&nbsp;баннеру к&nbsp;числу его показов.)</div>
-                </div>
-                
-                <div class="audit-s-table">
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Эффективность объявлений (CTR)</div>
-                      <div class="table-col-res no info">5%
-                        <div class="icon"></div>
-                      </div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Кампания разделена на поиск и РСЯ</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Выставленные регионы показа</div>
-                      <div class="table-col-res no">Больше одно региона</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Показ по дополнительным релевантным фразам</div>
-                      <div class="table-col-res yes">Отключен</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name info">Минус-слова
-                        <div class="icon"></div>
-                      </div>
-                      <div class="table-col-res yes">Есть (20)</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Заполнена визитка компании</div>
-                      <div class="table-col-res yes">Да</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Подключена метрика</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Цели настроены</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Уточнения</div>
-                      <div class="table-col-res yes">Да</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Быстрые ссылки</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Наличие UTM-меток</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow"></div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Нерелеватные объявления</div>
-                      <div class="table-col-res no">Есть</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">
-                    <div class="table-down__wrap">
-                      <div class="table-down-left">
-                        <p class="table-down-left__p">Группа</p>
-                        <p class="mob-text">Тали Иркутск</p>
-                        <p class="table-down-left__p mb">Ключевые фразы</p>
-                        <p class="mob-text">купить таль, купить таль <span>иркутск</span>, тали <span>иркутск</span>, тали купить, тали <span>продажа</span>, тали цена</p>
-                        <p class="table-down-left__p">Заголовок</p>
-                        <p class="mob-text">Купить таль по выгодной цене</p>
-                        <p class="table-down-left__p">Второй заголовок</p>
-                        <p class="mob-text">от 2935 рублей</p>
-                        <p class="table-down-left__p">Текст</p>
-                        <p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
-                      </div>
-                      <div class="table-down-right">
-                        <p>Тали Иркутск</p>
-                        <p class="mb">купить таль, купить таль <span>иркутск</span>, тали <span>иркутск</span>, тали купить, тали <span>продажа</span>, тали цена</p>
-                        <p>Купить таль по выгодной цене</p>
-                        <p>от 2935 рублей</p>
-                        <p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
-                      </div>
-                    </div>
-                    <div class="table-down__wrap">
-                      <div class="table-down-left">
-                        <p class="table-down-left__p">Группа</p>
-                        <p class="mob-text">Тали Москва</p>
-                        <p class="table-down-left__p mb">Ключевые фразы</p>
-                        <p class="mob-text">купить таль, купить таль <span>москва</span>, тали <span>москва</span>, тали купить, тали <span>продажа</span>, тали цена</p>
-                        <p class="table-down-left__p">Заголовок</p>
-                        <p class="mob-text">Купить таль по выгодной цене</p>
-                        <p class="table-down-left__p">Второй заголовок</p>
-                        <p class="mob-text">от 1000 $</p>
-                        <p class="table-down-left__p">Текст</p>
-                        <p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
-                      </div>
-                      <div class="table-down-right">
-                        <p>Тали Москва</p>
-                        <p class="mb">купить таль, купить таль <span>москва</span>, тали <span>москва</span>, тали купить, тали <span>продажа</span>, тали цена</p>
-                        <p>Купить таль по выгодной цене</p>
-                        <p>от 1000 $</p>
-                        <p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Второй заголовок</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                  <div class="table-row">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Отображаемые ссылки</div>
-                      <div class="table-col-res no">Нет</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                  <div class="table-row row-border">
-                    <div class="table-row__wrap">
-                      <div class="table-col-name">Статус показов</div>
-                      <div class="table-col-res no">Много</div>
-                      <div class="table-col-arrow yes">
-                        <div class="arrow"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
-                </div>
-                <div class="request">
-                  <div class="request-text">
-                    <h2 class="request-test__title">Заявка на&nbsp;полный аудит</h2>
-                    <p class="request-text__text">Оставьте электронную почту, пришлём аудит в&nbsp;течение 30 минут</p>
-                  </div>
-                  <div class="request-form-block">
-                    <form class="request-form" action="#" method="post">
-                      <label class="request-form__label">Электронная почта</label>
-                      <input class="request-form__input" type="text" placeholder="name@mail.ru">
-                      <input class="request-form__checkbox" id="check" type="checkbox">
-                      <label class="request-form__span" for="check">Получать отчёт каждый месяц</label>
-                      <button class="request-form__btn login-form__btn" type="submit">Отправить</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="container footer-container">
-          <div class="footer-top">
-            <div class="footer-top-item footer-top-item1">
-              <p class="footer-top-item__bold">Остались вопросы? Звоните:</p>
-              <p class="footer-top-item__phone">8 495 118-43-66</p>
-              <p class="footer-top-item__text">В будни с 9:00 до 18:00 (МСК +5)</p>
-            </div>
-            <div class="footer-top-item footer-top-item2">
-              <p class="footer-top-item__text">ИНН: 381115999541</p>
-              <p class="footer-top-item__text footer-top-item__text2">ОГРНИП: 318385000008444</p><a class="footer-top-item__link" href="#">Политика конфиденциальности</a><br><a class="footer-top-item__link" href="#">Пользовательское соглашение</a>
-            </div>
-          </div>
-          <div class="footer-bottom">© Power IM 2020 — сервис онлайн аудитов рекламных компаний Яндекс Директ и Google Ads
-            
-            
-            <div class="popup-overlay"></div>
-            <script src="../js/jquery-3.3.1.min.js"></script>
-            <script src="../js/jquery.nicescroll.min.js"></script>
-            <script src="../js/jquery.validate.min.js"></script>
-            <script src="../js/jquery.mask.min.js"></script>
-            <script src="../js/script.js"></script>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>PowerIM</title>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<span class="yandex"></span>
+			
+			<div class="content content-nomain">
+				<!--фон на главной-->
+				<div class="content__wrap"><span class="content__back">
+						<svg height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<title>Rectangle</title>
+							<desc>Created with Sketch.</desc>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<path d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F"></path>
+							</g>
+						</svg></span></div>
+				
+				<header class="header">
+					<div class="container header-container">
+						
+						
+						<div class="burger"><span class="burger-line line__main"></span><span class="burger-line line__middle"></span><span class="burger-line line__main"></span></div>
+						<div class="burger-menu">
+							<nav>
+								<ul class="burger-menu-list">
+									<li class="active"><a class="burger-menu-list__link active" href="#">Что анализирует сервис</a></li>
+									<li><a class="burger-menu-list__link" href="#">Как отозвать доступы</a></li>
+									<li><a class="burger-menu-list__link" href="#">О нас</a></li>
+								</ul>
+							</nav>
+							<div class="burger-menu-bottom">
+								<p class="burger-menu-bottom__tel">8 495 118-43-66</p>
+								<p class="burger-menu-bottom__time">В будни с 9:00 до 18:00 (МСК +5)</p>
+								<div class="burger-menu-bottom-policy"><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
+							</div>
+						</div>
+						<a class="logo" href="../index.html"></a>
+						
+						<div class="menu">
+							<ul class="menu-list">
+								<li><a class="menu__link" href="pug/analysis.html">Что анализирует сервис</a></li>
+								<li><a class="menu__link" href="#">Как отозвать доступы</a></li>
+								<li><a class="menu__link" href="pug/service.html">О нас</a></li>
+							</ul>
+						</div>
+						
+						<div class="login"><a class="login__text register" href="#"><span>Вход</span></a>
+							
+							<div class="popup-lk">
+								<div class="popup-lk__wrap">
+									<ul class="popup-lk-list">
+										<li><a class="popup-lk-list__link" href="#">Войти</a></li>
+										<li><a class="popup-lk-list__link popup-lk-list__link--logout" href="#">Выйти</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="popup-login" id="login">
+								<div class="popup-login__wrap">
+									
+									
+									<div class="login__title">Вход в личный кабинет</div>
+									
+									<form class="login-form" action="#" method="post">
+										<div class="login-form-item">
+											<label class="login-form-item__label">Мобильный телефон</label>
+											<input class="login-form-item__input login-form-item__input--tel" type="text" placeholder="+7 000 000-00-00" name="tel"><span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
+										</div>
+										<div class="login-form-item login-form__sms">
+											<label class="login-form-item__label">Код из SMS</label>
+											<input class="login-form-item__input login-form-item__input--sms" type="number" placeholder="0000" name="sms_code"><span class="login-form-item__text text-more">Выслать код ещё раз через<span class="timer">20</span> секунд</span><a class="send-more" href="#">Выслать код ещё раз</a>
+										</div>
+										<button class="login-form__btn login-form__btn--js" type="submit" name="login">Войти</button>
+										<p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь<a class="login-form__link" href="#" target="_blank">с политикой обработки персональных данных</a></p>
+									</form>
+									
+									<div class="login-yandex">
+										<p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
+										<form action="#" method="post">
+											<button class="login-form__btn">Подключите...</button>
+											<!-- <input id="file" type="file" class="login-yandex__btn" name="attach">-->
+											<!-- <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
+										</form>
+										<p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				
+				<div class="breadcrumb">
+					<div class="container"><a class="breadcrumb__link" href="account.html">←<span>К рекламным кампаниям</span></a></div>
+				</div>
+				<div class="audit-s bg__wrap">
+					<div class="container audit-container">
+						<div class="content-container">
+							
+							
+							<h1 class="content-container__title">Аудит рекламной компании: Динамические объявления</h1><span class="audit-s__title-text">за 20 января 2020</span>
+							
+							<div class="audit-s__wrap">
+								<h2 class="audit-s__subtitle">Оценка эффективности</h2>
+								
+								<div class="audit-s-efficiency">
+									<div class="audit-s-efficiency-item">
+										<div class="audit-s-efficiency-item-percent green"><span class="percentage">60%</span>
+											<svg class="circular-chart green" viewBox="0 0 36 36">
+												<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+												<path class="circle" stroke-dasharray="60, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+											</svg>
+										</div>
+										<div class="audit-s-efficiency-item__text">Качество рекламной кампании</div>
+									</div>
+									
+									<div class="audit-s-efficiency-item">
+										<div class="audit-s-efficiency-item-percent red"><span class="percentage">52%
+												<svg class="circular-chart red" viewBox="0 0 36 36">
+													<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+													<path class="circle" stroke-dasharray="52, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+												</svg></span></div>
+										<div class="audit-s-efficiency-item__text">Охват рекламной кампании</div>
+									</div>
+								</div>
+								<h2 class="audit-s__subtitle">Подробный аудит</h2>
+								
+								<div class="icon-text">
+									<div class="icon-text__wrap">CTR&nbsp;&mdash; Показатель кликабельности баннеров или других рекламных объявлений. Рассчитывается как процентное отношение числа кликов по&nbsp;баннеру к&nbsp;числу его показов.)</div>
+								</div>
+								
+								<div class="audit-s-table">
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Эффективность объявлений (CTR)</div>
+											<div class="table-col-res no info">5%
+												<div class="icon"></div>
+											</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Кампания разделена на поиск и РСЯ</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Выставленные регионы показа</div>
+											<div class="table-col-res no">Больше одно региона</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Показ по дополнительным релевантным фразам</div>
+											<div class="table-col-res yes">Отключен</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name info">Минус-слова
+												<div class="icon"></div>
+											</div>
+											<div class="table-col-res yes">Есть (20)</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Заполнена визитка компании</div>
+											<div class="table-col-res yes">Да</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Подключена метрика</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Цели настроены</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Уточнения</div>
+											<div class="table-col-res yes">Да</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Быстрые ссылки</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Наличие UTM-меток</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow"></div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Нерелеватные объявления</div>
+											<div class="table-col-res no">Есть</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down down">
+										<div class="table-down__wrap">
+											<div class="table-down-left">
+												<p>Группа</p>
+												<p class="mob-text">Тали Иркутск</p>
+												<p class="mb">Ключевые фразы</p>
+												<p class="mob-text">купить таль, купить таль<span>иркутск</span>, тали<span>иркутск</span>, тали купить, тали<span>продажа</span>, тали цена</p>
+												<p>Заголовок</p>
+												<p class="mob-text">Купить таль по выгодной цене</p>
+												<p>Второй заголовок</p>
+												<p class="mob-text">от 2935 рублей</p>
+												<p>Текст</p>
+												<p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											</div>
+											<div class="table-down-right">
+												<p>Тали Иркутск</p>
+												<p class="mb">купить таль, купить таль<span>иркутск</span>, тали<span>иркутск</span>, тали купить, тали<span>продажа</span>, тали цена</p>
+												<p>Купить таль по выгодной цене</p>
+												<p>от 2935 рублей</p>
+												<p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											</div>
+										</div>
+										<div class="table-down__wrap">
+											<div class="table-down-left">
+												<p>Группа</p>
+												<p class="mob-text">Тали Москва</p>
+												<p class="mb">Ключевые фразы</p>
+												<p class="mob-text">купить таль, купить таль<span>москва</span>, тали<span>москва</span>, тали купить, тали<span>продажа</span>, тали цена</p>
+												<p>Заголовок</p>
+												<p class="mob-text">Купить таль по выгодной цене</p>
+												<p>Второй заголовок</p>
+												<p class="mob-text">от 1000 $</p>
+												<p>Текст</p>
+												<p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											</div>
+											<div class="table-down-right">
+												<p>Тали Москва</p>
+												<p class="mb">купить таль, купить таль<span>москва</span>, тали<span>москва</span>, тали купить, тали<span>продажа</span>, тали цена</p>
+												<p>Купить таль по выгодной цене</p>
+												<p>от 1000 $</p>
+												<p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											</div>
+										</div>
+									</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Второй заголовок</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+									<div class="table-row">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Отображаемые ссылки</div>
+											<div class="table-col-res no">Нет</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+									<div class="table-row row-border">
+										<div class="table-row__wrap">
+											<div class="table-col-name">Статус показов</div>
+											<div class="table-col-res no">Много</div>
+											<div class="table-col-arrow yes">
+												<div class="arrow"></div>
+											</div>
+										</div>
+									</div>
+									<div class="table-down">-!городок -!если -!используют -!как -!когда -!кто -!магазинная -!механический -!него -!применяют -!продаж -!продать -!свердловской -!состоит -!чего -!чему -!что -!это -"intex 68615" -"land cruiser prado 90" -"домкрат дт 30" -"стропа" -"электросварка" -"ямахе центре" -12 -50 -66 -airline -angara -arctic -arx -autoklad -autoprofi -avito -baiyun -ban -belursib -bma -bmw -bohler -bosch -bottline -bravo -bridge -candy -cathook -cd -champion -cynch -cъемник -daewoo -denzel -dewalt -din -download -dozer -dpt353 -dunlop -duplex -elebia -electric -emergency -esab -expert -f3001 -faq -force -foroffic -forsage -free -ftp -fubag -geosys -gigant -gla -global -golden -goodel -haklift -hammer -hijack -hobbyline -hsz -hydraulic -inforce -iwrc</div>
+								</div>
+								<div class="request">
+									<div class="request-text">
+										<h2 class="request-test__title">Заявка на&nbsp;полный аудит</h2>
+										<p class="request-text__text">Оставьте электронную почту, пришлём аудит в&nbsp;течение 30 минут</p>
+									</div>
+									<div class="request-form-block">
+										<form class="request-form" action="#" method="post">
+											<label class="request-form__label">Электронная почта</label>
+											<input class="request-form__input" type="text" placeholder="name@mail.ru">
+											<input class="request-form__checkbox" id="check" type="checkbox">
+											<label class="request-form__span" for="check">Получать отчёт каждый месяц</label>
+											<button class="request-form__btn login-form__btn" type="submit">Отправить</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container footer-container">
+					<div class="footer-top">
+						<div class="footer-top-item footer-top-item1">
+							<p class="footer-top-item__bold">Остались вопросы? Звоните:</p>
+							<p class="footer-top-item__phone">8 495 118-43-66</p>
+							<p class="footer-top-item__text">В будни с 9:00 до 18:00 (МСК +5)</p>
+						</div>
+						<div class="footer-top-item footer-top-item2">
+							<p class="footer-top-item__text">ИНН: 381115999541</p>
+							<p class="footer-top-item__text footer-top-item__text2">ОГРНИП: 318385000008444</p><a class="footer-top-item__link" href="#">Политика конфиденциальности</a><br><a class="footer-top-item__link" href="#">Пользовательское соглашение</a>
+						</div>
+					</div>
+					<div class="footer-bottom">© Power IM 2020 — сервис онлайн аудитов рекламных компаний Яндекс Директ и Google Ads</div>
+				</div>
+			</footer>
+		</div>
+		<div class="popup-overlay"></div>
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/jquery.nicescroll.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.mask.min.js"></script>
+		<script src="../js/script.js"></script>
+	</body>
 </html>

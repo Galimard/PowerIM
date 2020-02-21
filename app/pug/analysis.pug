@@ -1,0 +1,56 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title PowerIM
+        link(rel="stylesheet" href="../css/style.css")
+    body
+        |
+        .wrapper
+            |
+            |
+            span.yandex
+            |
+            |
+            .content.content-nomain
+                |
+                //фон на главной
+                .content__wrap
+                    span.content__back
+                        svg(height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                            title Rectangle
+                            desc Created with Sketch.
+                            g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+                                path(d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F")
+                |
+                |
+                include ../header
+                .analysis.bg__wrap
+                    .container
+                        .content-container
+                            h1.content-container__title.analysis__title Что анализирует сервис
+                            .analysis-block
+                                .analysis-block-item.camp
+                                    p.analysis-block-item__title Параметры кампаний
+                                    p.analysis-block-item__subtitle Анализ настроек рекламных кампаний
+                                .analysis-block-item.effect
+                                    p.analysis-block-item__title Показатели эффективности
+                                    p.analysis-block-item__subtitle Анализ ключевых показателей эффективности: CTR и отказов
+                                .analysis-block-item.links
+                                    p.analysis-block-item__title Ссылки
+                                    p.analysis-block-item__subtitle Анализ доступности ссылок и наличия UTM-меток
+                                .analysis-block-item.announs
+                                    p.analysis-block-item__title Объявления
+                                    p.analysis-block-item__subtitle Анализ релевантности объявлений для групп ключевых слов и заполнения полей
+                                .analysis-block-item.param
+                                    p.analysis-block-item__title Дополнительные параметры
+                                    p.analysis-block-item__subtitle Анализ наличия расширений объявлений: уточнений, быстрых ссылок и других параметров
+            include ../footer
+        .popup-overlay
+        script(src='../js/jquery-3.3.1.min.js')
+        script(src="../js/jquery.nicescroll.min.js")
+        script(src='../js/jquery.validate.min.js')
+        script(src='../js/jquery.mask.min.js')
+        script(src='../js/script.js')

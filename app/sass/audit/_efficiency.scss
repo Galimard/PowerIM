@@ -11,7 +11,7 @@
 }
 
 .audit-s-efficiency-item {
-  width: 46%;
+  width: 304px;
   display: flex;
 }
 
@@ -100,6 +100,13 @@
   font-weight: 400;
   line-height: 1.56;
 }
+
+@media all and (max-width: 780px) {
+  .audit-s-efficiency-item {
+    width: 46%;
+  }
+}
+
 @media all and (max-width: 520px) {
   .audit-s-efficiency {
     flex-direction: column;

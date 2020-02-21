@@ -31,7 +31,7 @@ html(lang="ru")
                 |
                 .account.bg__wrap
                     .container
-                        - var user = true
+                        - var user = false
                         if user
                             .content-container
                                 |
@@ -68,23 +68,23 @@ html(lang="ru")
                                             - var client = false
                                             - var herpoymi = false
                                             if client
-                                                include _account-sublist
+                                                include account/_account-sublist
                                             else
                                                 h3.account-accs__title Представитель
                                                 |
                                                 |
                                                 if agent
-                                                    include _account-select
-                                                    include _account-list
+                                                    include account/_account-select
+                                                    include account/_account-list
                                                 else if directolog
-                                                    include _account-select
-                                                    include _account-sublist
+                                                    include account/_account-select
+                                                    include account/_account-sublist
                                                 else
-                                                    include _account-select
-                                                    include _account-sublist
+                                                    include account/_account-select
+                                                    include account/_account-sublist
                                                     span.delimiter
                                                     //тут по идее другой список должен отображаться, но такой же по стилям
-                                                    include _account-sublist
+                                                    include account/_account-sublist
                                             |
                                             |
                                             a(href="#").account-accs__add-btn Добавить аккаунт…
@@ -101,7 +101,7 @@ html(lang="ru")
                                                     li
                                                         a(href="#").account-audit__link Текстово-графические объявления
                                                     li
-                                                        a(href="#").account-audit__link Динамические объявления
+                                                        a(href="audit.html").account-audit__link Динамические объявления
                                                     li
                                                         a(href="#").account-audit__link Реклама мобильных приложений
                                                     li
@@ -112,57 +112,59 @@ html(lang="ru")
                                             .account-accs__wrap
                                                 |
                                                 |
-                                                - var agent = true
-                                                - var directolog = false
+                                                - var agent = false
+                                                - var directolog = true
                                                 - var client = false
                                                 - var herpoymi = false
                                                 if client
-                                                    include _account-sublist
+                                                    include account/_account-sublist
                                                 else
                                                     h3.account-accs__title Представитель
                                                     |
                                                     |
                                                     if agent
-                                                        include _account-select
-                                                        include _account-list
+                                                        include account/_account-select
+                                                        include account/_account-list
                                                     else if directolog
-                                                        include _account-select
-                                                        include _account-sublist
+                                                        include account/_account-select
+                                                        include account/_account-sublist
                                                     else
-                                                        include _account-select
-                                                        include _account-sublist
+                                                        include account/_account-select
+                                                        include account/_account-sublist
                                                         span.delimiter
                                                         //тут по идее другой список должен отображаться, но такой же по стилям
-                                                        include _account-sublist
+                                                        include account/_account-sublist
                                                 |
                                                 |
                                                 a(href="#").account-accs__add-btn Добавить аккаунт…
                         else
                             span.nouser Вы вошли в личный кабинет тестового профиля, для использования всех возможностей сервиса
                                 a(href="#").nouser-login зарегистрируйтесь
-                            .account-container.nouser-pd
-                                |
-                                |
-                                h1.account__title Личный кабинет
-                                |
-                                |
-                                .account__wrap
+                            .content-container
+
+                                .account-container.nouser-pd
                                     |
                                     |
-                                    .account-audit
-                                        h2.account-audit__title.account-audit__title-border Аудиты рекламных кампаний
-                                        .account-audit__wrap
-                                            ul
-                                                li
-                                                    a(href="#").account-audit__link Текстово-графические объявления
-                                                li
-                                                    a(href="#").account-audit__link Динамические объявления
-                                                li
-                                                    a(href="#").account-audit__link Реклама мобильных приложений
-                                                li
-                                                    a(href="#").account-audit__link Медийно-контекстный баннер на поиске
-                                                li
-                                                    a(href="#").account-audit__link Медийная компания
+                                    h1.account__title Личный кабинет
+                                    |
+                                    |
+                                    .account__wrap
+                                        |
+                                        |
+                                        .account-audit
+                                            h2.account-audit__title.account-audit__title-border Аудиты рекламных кампаний
+                                            .account-audit__wrap
+                                                ul
+                                                    li
+                                                        a(href="#").account-audit__link Текстово-графические объявления
+                                                    li
+                                                        a(href="audit.html").account-audit__link Динамические объявления
+                                                    li
+                                                        a(href="#").account-audit__link Реклама мобильных приложений
+                                                    li
+                                                        a(href="#").account-audit__link Медийно-контекстный баннер на поиске
+                                                    li
+                                                        a(href="#").account-audit__link Медийная компания
 
             include ../footer
             |
