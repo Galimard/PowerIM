@@ -22,8 +22,8 @@
 							</g>
 						</svg></span></div>
 				
-				<header class="header">
-					<div class="container header-container">
+				<header class="header pd">
+					<div class="container header-container pd">
 						
 						
 						<div class="burger"><span class="burger-line line__main"></span><span class="burger-line line__middle"></span><span class="burger-line line__main"></span></div>
@@ -46,7 +46,7 @@
 						<div class="menu">
 							<ul class="menu-list">
 								<li><a class="menu__link" href="pug/analysis.html">Что анализирует сервис</a></li>
-								<li><a class="menu__link" href="#">Как отозвать доступы</a></li>
+								<li><a class="menu__link" href="pug/access.html">Как отозвать доступы</a></li>
 								<li><a class="menu__link" href="pug/service.html">О нас</a></li>
 							</ul>
 						</div>
@@ -59,37 +59,6 @@
 										<li><a class="popup-lk-list__link" href="#">Войти</a></li>
 										<li><a class="popup-lk-list__link popup-lk-list__link--logout" href="#">Выйти</a></li>
 									</ul>
-								</div>
-							</div>
-							
-							<div class="popup-login" id="login">
-								<div class="popup-login__wrap">
-									
-									
-									<div class="login__title">Вход в личный кабинет</div>
-									
-									<form class="login-form" action="#" method="post">
-										<div class="login-form-item">
-											<label class="login-form-item__label">Мобильный телефон</label>
-											<input class="login-form-item__input login-form-item__input--tel" type="text" placeholder="+7 000 000-00-00" name="tel"><span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
-										</div>
-										<div class="login-form-item login-form__sms">
-											<label class="login-form-item__label">Код из SMS</label>
-											<input class="login-form-item__input login-form-item__input--sms" type="number" placeholder="0000" name="sms_code"><span class="login-form-item__text text-more">Выслать код ещё раз через<span class="timer">20</span> секунд</span><a class="send-more" href="#">Выслать код ещё раз</a>
-										</div>
-										<button class="login-form__btn login-form__btn--js" type="submit" name="login">Войти</button>
-										<p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь<a class="login-form__link" href="#" target="_blank">с политикой обработки персональных данных</a></p>
-									</form>
-									
-									<div class="login-yandex">
-										<p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
-										<form action="#" method="post">
-											<button class="login-form__btn">Подключите...</button>
-											<!-- <input id="file" type="file" class="login-yandex__btn" name="attach">-->
-											<!-- <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
-										</form>
-										<p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.</p>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -121,11 +90,12 @@
 									</div>
 									
 									<div class="audit-s-efficiency-item">
-										<div class="audit-s-efficiency-item-percent red"><span class="percentage">52%
-												<svg class="circular-chart red" viewBox="0 0 36 36">
-													<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-													<path class="circle" stroke-dasharray="52, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
-												</svg></span></div>
+										<div class="audit-s-efficiency-item-percent red"><span class="percentage">52%</span>
+											<svg class="circular-chart red" viewBox="0 0 36 36">
+												<path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+												<path class="circle" stroke-dasharray="52, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+											</svg>
+										</div>
 										<div class="audit-s-efficiency-item__text">Охват рекламной кампании</div>
 									</div>
 								</div>
@@ -237,45 +207,47 @@
 									</div>
 									<div class="table-down down">
 										<div class="table-down__wrap">
-											<div class="table-down-left">
-												<p>Группа</p>
-												<p class="mob-text">Тали Иркутск</p>
-												<p class="mb">Ключевые фразы</p>
-												<p class="mob-text">купить таль, купить таль<span>иркутск</span>, тали<span>иркутск</span>, тали купить, тали<span>продажа</span>, тали цена</p>
-												<p>Заголовок</p>
-												<p class="mob-text">Купить таль по выгодной цене</p>
-												<p>Второй заголовок</p>
-												<p class="mob-text">от 2935 рублей</p>
-												<p>Текст</p>
-												<p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Группа</div>
+												<div class="table-down__col">Тали Иркутск</div>
 											</div>
-											<div class="table-down-right">
-												<p>Тали Иркутск</p>
-												<p class="mb">купить таль, купить таль<span>иркутск</span>, тали<span>иркутск</span>, тали купить, тали<span>продажа</span>, тали цена</p>
-												<p>Купить таль по выгодной цене</p>
-												<p>от 2935 рублей</p>
-												<p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											<div class="table-down__row mb">
+												<div class="table-down__col col1">Ключевые фразы</div>
+												<div class="table-down__col">купить таль, купить таль<span> иркутск</span>, тали<span> иркутск</span>, тали купить, тали<span> продажа</span>, тали цена</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Заголовок</div>
+												<div class="table-down__col">Купить таль по выгодной цене</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Второй заголовок</div>
+												<div class="table-down__col">от 2935 рублей</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Текст</div>
+												<div class="table-down__col">Тали ручные, электрические. Тележки электрические. Пульты управления.</div>
 											</div>
 										</div>
 										<div class="table-down__wrap">
-											<div class="table-down-left">
-												<p>Группа</p>
-												<p class="mob-text">Тали Москва</p>
-												<p class="mb">Ключевые фразы</p>
-												<p class="mob-text">купить таль, купить таль<span>москва</span>, тали<span>москва</span>, тали купить, тали<span>продажа</span>, тали цена</p>
-												<p>Заголовок</p>
-												<p class="mob-text">Купить таль по выгодной цене</p>
-												<p>Второй заголовок</p>
-												<p class="mob-text">от 1000 $</p>
-												<p>Текст</p>
-												<p class="mob-text">Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Группа</div>
+												<div class="table-down__col">Тали Москва</div>
 											</div>
-											<div class="table-down-right">
-												<p>Тали Москва</p>
-												<p class="mb">купить таль, купить таль<span>москва</span>, тали<span>москва</span>, тали купить, тали<span>продажа</span>, тали цена</p>
-												<p>Купить таль по выгодной цене</p>
-												<p>от 1000 $</p>
-												<p>Тали ручные, электрические. Тележки электрические. Пульты управления.</p>
+											<div class="table-down__row mb">
+												<div class="table-down__col col1">Ключевые фразы</div>
+												<div class="table-down__col">купить таль, купить таль<span> москва</span>, тали<span> москва</span>, тали купить, тали<span> продажа</span>, тали цена</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Заголовок</div>
+												<div class="table-down__col">Купить таль по выгодной цене</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Второй заголовок</div>
+												<div class="table-down__col">от 2935 рублей</div>
+											</div>
+											<div class="table-down__row">
+												<div class="table-down__col col1">Текст</div>
+												<div class="table-down__col">Тали ручные, электрические. Тележки электрические. Пульты управления.</div>
 											</div>
 										</div>
 									</div>

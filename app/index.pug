@@ -6,7 +6,42 @@ head
     title PowerIM
     link(rel='stylesheet' href='css/style.css')
     link(rel='stylesheet' href='sass/style.scss')
+
 .wrapper
+    #login.popup-login
+        .popup-login__wrap
+            |
+            |
+            .login__title Вход в личный кабинет
+            |
+            |
+            form.login-form(action='#' method='post')
+                .login-form-item
+                    label.login-form-item__label Мобильный телефон
+                    input.login-form-item__input.login-form-item__input--tel(type='text' placeholder='+7 000 000-00-00' name='tel')
+                    span.login-form-item__text.text-sms Пришлём SMS с кодом для входа
+                .login-form-item.login-form__sms
+                    label.login-form-item__label Код из SMS
+                    input.login-form-item__input.login-form-item__input--sms(type='number' placeholder='0000' name='sms_code')
+                    span.login-form-item__text.text-more
+                        | Выслать код ещё раз через
+                        span.timer 20
+                        |  секунд
+                    a.send-more(href='#') Выслать код ещё раз
+                button.login-form__btn.login-form__btn--js(type='submit' name='login') Войти
+                p.login-form-item__text.text-policy
+                    | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+                    a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+            |
+            |
+            .login-yandex
+                p.login-yandex__text Для подготовки аудита, подключите рекламный аккаунт Яндекс
+                form(action='#' method='post')
+                    button.login-form__btn Подключите...
+                    // <input id="file" type="file" class="login-yandex__btn" name="attach">
+                    // <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>
+                p.audit__text.login-yandex__safe
+                    | Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.
     span.yandex
     .content
         //фон на главной

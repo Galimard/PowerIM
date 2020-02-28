@@ -1,6 +1,6 @@
 
-<header class="header">
-	<div class="container header-container">
+<header class="header pd">
+	<div class="container header-container pd">
 		
 		
 		<div class="burger"><span class="burger-line line__main"></span><span class="burger-line line__middle"></span><span class="burger-line line__main"></span></div>
@@ -23,7 +23,7 @@
 		<div class="menu">
 			<ul class="menu-list">
 				<li><a class="menu__link" href="pug/analysis.html">Что анализирует сервис</a></li>
-				<li><a class="menu__link" href="#">Как отозвать доступы</a></li>
+				<li><a class="menu__link" href="pug/access.html">Как отозвать доступы</a></li>
 				<li><a class="menu__link" href="pug/service.html">О нас</a></li>
 			</ul>
 		</div>
@@ -36,37 +36,6 @@
 						<li><a class="popup-lk-list__link" href="#">Войти</a></li>
 						<li><a class="popup-lk-list__link popup-lk-list__link--logout" href="#">Выйти</a></li>
 					</ul>
-				</div>
-			</div>
-			
-			<div class="popup-login" id="login">
-				<div class="popup-login__wrap">
-					
-					
-					<div class="login__title">Вход в личный кабинет</div>
-					
-					<form class="login-form" action="#" method="post">
-						<div class="login-form-item">
-							<label class="login-form-item__label">Мобильный телефон</label>
-							<input class="login-form-item__input login-form-item__input--tel" type="text" placeholder="+7 000 000-00-00" name="tel"/><span class="login-form-item__text text-sms">Пришлём SMS с кодом для входа</span>
-						</div>
-						<div class="login-form-item login-form__sms">
-							<label class="login-form-item__label">Код из SMS</label>
-							<input class="login-form-item__input login-form-item__input--sms" type="number" placeholder="0000" name="sms_code"/><span class="login-form-item__text text-more">Выслать код ещё раз через<span class="timer">20</span> секунд</span><a class="send-more" href="#">Выслать код ещё раз</a>
-						</div>
-						<button class="login-form__btn login-form__btn--js" type="submit" name="login">Войти</button>
-						<p class="login-form-item__text text-policy">Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь<a class="login-form__link" href="#" target="_blank">с политикой обработки персональных данных</a></p>
-					</form>
-					
-					<div class="login-yandex">
-						<p class="login-yandex__text">Для подготовки аудита, подключите рекламный аккаунт Яндекс</p>
-						<form action="#" method="post">
-							<button class="login-form__btn">Подключите...</button>
-							<!-- <input id="file" type="file" class="login-yandex__btn" name="attach">-->
-							<!-- <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>-->
-						</form>
-						<p class="audit__text login-yandex__safe">Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.</p>
-					</div>
 				</div>
 			</div>
 		</div>

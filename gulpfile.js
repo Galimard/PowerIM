@@ -83,12 +83,12 @@ gulp.task('compress-pictures-userdata', function() {
 gulp.task('compress-images', gulp.series('compress-pictures-images', 'compress-pictures-userdata'));
 
 /*---------------------------------преобразование pug---------------------------*/
-// gulp.task('pug', function buildHTML() {
-//     return gulp.src('app/**/*.pug')
-//         .pipe(pug())
-//         .pipe(gulp.dest('app')) // Выгружаем результата в папку app/css
-//         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-// });
+gulp.task('pug', function buildHTML() {
+    return gulp.src('app/**/*.pug')
+        .pipe(pug({pretty: '\t'}))
+        .pipe(gulp.dest('app')) // Выгружаем результата в папку app/css
+        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
 
 
 /*---------------------------------преобразование scss-------------------*/
@@ -103,7 +103,9 @@ gulp.task('sass', function() { // Создаем таск Sass
 /*---------------------------------Сборка библиотек стилей в один файл-------------------*/
 var cssFiles = [ //файлы в том порядке, в котором должны быть добавлены в общий файл
     'app/css/style.css',
-    'app/css/media.css'
+    'app/css/media.css',
+    'app/css/slick.css',
+    'app/css/slick-theme.css'
 ];
 
 //запустить на продакшене, один раз, не отслеживать??
@@ -151,7 +153,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/pug/**/*.pug'); // Наблюдение за sass файлами
+    gulp.watch('app/pug/**/*.pug', gulp.parallel('pug')); // Наблюдение за pug файлами
     gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('app/js/**/*.js', gulp.parallel('scripts')); // Наблюдение за js файлами
     gulp.watch("app/*.html").on('change', browserSync.reload); //наблюдение за html файлами

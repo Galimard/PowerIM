@@ -179,8 +179,8 @@ input::-webkit-inner-spin-button {
   background: url("../img/pageup.svg") center top no-repeat;
   position: absolute;
   top: -32px;
-  -webkit-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 101%;
+  background-size: 101%;
 }
 
 .content-container {
@@ -277,7 +277,11 @@ input::-webkit-inner-spin-button {
   display: flex;
   padding-top: 40px;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
+}
+
+.header-container.pd {
+  padding-bottom: 5px;
 }
 
 .header-container::after {
@@ -287,7 +291,8 @@ input::-webkit-inner-spin-button {
   height: 1px;
   background: #4e37ae;
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
+  //bottom: -5px;
 }
 
 .burger {
@@ -521,7 +526,7 @@ input::-webkit-inner-spin-button {
 
 .login__text.register {
   display: block;
-  width: 65px;
+  width: 60px;
   height: 36px;
   background: url("../img/arrow2.svg") right center no-repeat;
   position: relative;
@@ -537,7 +542,7 @@ input::-webkit-inner-spin-button {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #f7f7fa url("../img/user(1).svg") center center no-repeat;
+  background: #f7f7fa url("../img/user.svg") center center no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -945,7 +950,6 @@ input::-webkit-inner-spin-button {
   position: absolute;
   z-index: 11;
   top: -1000px;
-  right: 39px;
   width: 418px;
   border-radius: 9px;
   box-shadow: 0 12px 14px 0 rgba(11, 16, 38, 0.2);
@@ -960,13 +964,20 @@ input::-webkit-inner-spin-button {
 
 .popup-login.open {
   top: 50px;
-  right: 18px;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -ms-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.4s ease;
+}
+
+.popup-login.register {
+  top: 80px;
+}
+
+.popup-login.login {
+  top: 77px;
 }
 
 .popup-login__wrap {
@@ -1315,4 +1326,5 @@ input::-webkit-inner-spin-button {
 @import 'audit/request';
 @import 'analysis/analysis';
 @import 'service/service';
+@import 'access/access';
 @import 'media';

@@ -4,15 +4,24 @@ $(document).ready(function () {
     $('.login__text, .nouser-login').on('click', function (e) {
        e.preventDefault();
 
+       var leftPosPopup = $('.login__text').offset().left - 370;
+
        $(this).toggleClass('active');
        $('.popup-login').toggleClass('open');
        $(".popup-overlay").fadeToggle(400);
        $('.login-form-item__input--tel').focus();
+
+       if($('.login__text').hasClass('register')) { //для залогиненных пользователей
+           $('.popup-login').toggleClass('register').css('left', leftPosPopup);
+       }
+        if($('.login__text').hasClass('login')) { //для незалогиненных пользователей
+            $('.popup-login').toggleClass('login').css('left', leftPosPopup);
+        }
     });
 
     $('.popup-overlay').on('click', function () {
         $('.login__text').removeClass('active');
-        $('.popup-login').removeClass('open');
+        $('.popup-login').removeClass('open register login');
         $(".popup-overlay").fadeOut(200);
     });
 
@@ -82,39 +91,6 @@ $(document).ready(function () {
         zindex: 10,
         cursorborder: "1px solid rgba(37, 38, 42, 0.8)"
     });
-
-    // var positions = [], //сюда сложим на загрузке страницы позиции наших "якорных" блоков, чтобы не считать их каждый раз. и сюда же положим ссылки на соответствующие a.scroll-to
-    //     currentActive = null; //здесь будет храниться id текущего блока, чтобы не менять классы по 100 раз за одну прокрутку
-    //     blocks = $('.employee-list-item__wrap'); //сохраним массив всех a.scroll-to
-    // var listTop = $('.employee-list').offset().top;
-    //
-    // $(".employee-list-item__wrap").each(function(){ //перебираем блоки, сохраняем позиции и ссылки на пункты меню
-    //     positions.push({
-    //         top: $(this).offset().top,
-    //         blocks: blocks
-    //     });
-    //     // positions.push($(this).offset().top);
-    // });
-    //
-    // positions = positions.reverse();
-
-    // $('.employee-list').on('scroll', function () {
-    //
-    //     var winTop = $('.employee-list').scrollTop();
-    //     for(var i = 0; i < positions.length; i++){
-    //
-    //         if(positions[i].top < winTop){ //если прокрутка страницы ниже нашего блока
-    //             if(currentActive !== i){ //и если мы еще не добавили класс текущему блоку
-    //                 currentActive = i;
-    //                 blocks.filter('.sticky').removeClass('sticky'); //снимаем класс .active с текущего пункта меню
-    //                 positions[i].blocks.addClass("sticky");
-    //             }
-    //             break; //выходим из цикла, не нужно проверять блоки, которые выше
-    //         }
-    //     }
-    //
-    //     // $('.employee-list-item__wrap').addClass('sticky');
-    // });
 
     //-----------------------------------------employee list-----------------------------------------
     $('.employee-list-subitem').on('click', function () {
@@ -197,20 +173,87 @@ $(document).ready(function () {
     });
 
     //слайдер на странице service
-    $('.service-slider').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        // appendArrows: $('.partners-slider__arrows'),
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 720,
-                settings: {
-                    slidesToShow: 3
+    function media(mediaQueryString, action){
+        'use strict';
+        var handleMatchMedia = function (mediaQuery) {
+            if (mediaQuery.matches) { //Попадает в запроc
+                if (action  && typeof(action) === 'function') {
+                    action();
                 }
             }
+        };
+        var mql = window.matchMedia(mediaQueryString); //стандартный медиазапрос для смены режима просмотра
+        handleMatchMedia(mql);
+        mql.addListener(handleMatchMedia);
+    }
+    media('all and (min-width: 480px)', function() {
+        $('.service-slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1045,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 820,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 550,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+
+    media('all and (max-width: 479px)', function() {
+        if($('.service-slider').hasClass('slick-slider')) {
+            $('.service-slider').slick('unslick');
+        }
+    });
+
+    //слайдер на странице access
+    $('.access-slider__wrap').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        customPaging : function(slider, i) {
+            var title = $(slider.$slides[i]).find('[data-title]').data('title');
+            return '<a class="pager__item"> '+title+' </a>';
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    customPaging: function() {
+                        return '<a class="pager__item-mob"></a>';
+                    }
+                }
+            },
+            // {
+            //     breakpoint: 820,
+            //     settings: {
+            //         slidesToShow: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 550,
+            //     settings: {
+            //         slidesToShow: 1
+            //     }
+            // }
         ]
     });
 

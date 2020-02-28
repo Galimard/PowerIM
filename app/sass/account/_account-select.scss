@@ -4,10 +4,10 @@
 
 .select-selected {
   max-width: 307px;
-  height: 75px;
+  height: 73px;
   border-radius: 5px;
   border: solid 1px #d6d6e1;
-  background: #f6f6ff;
+  background-image: linear-gradient(to bottom, #ffffff 50%, #f0f0f7);
   padding: 16px 20px;
   position: relative;
   margin-bottom: 14px;
@@ -36,7 +36,6 @@
 }
 
 .select-item-img__wrap {
-
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
@@ -44,9 +43,9 @@
 }
 
 .select-item__img {
-  min-width: 36px;
-  height: 36px;
-  background: #f7f7fa url("../img/user.svg") center center no-repeat;
+  min-width: 40px;
+  height: 40px;
+  background: #d8dbe0 url("../img/user(2).svg") center center no-repeat;
   border-radius: 50%;
   margin-right: 14px;
   position: relative;

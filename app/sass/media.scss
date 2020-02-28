@@ -4,8 +4,8 @@
   .header-container::after {
     width: 96%;
   }
-  .login__text {
-    margin-right: 60px;
+  .login__text.login {
+    margin-right: 40px;
   }
   .notebook-img {
     position: absolute;
@@ -14,6 +14,9 @@
 }
 
 @media all and (max-width: 1110px) {
+  .bg__wrap::before {
+    background-size: cover;
+  }
   .audit__text::before {
     left: -15px;
   }
@@ -36,6 +39,15 @@
     left: 52px;
     width: 406px;
     height: 268px;
+  }
+  .popup-login.register {
+    top: 83px;
+    right: 123px;
+    left: unset !important;
+  }
+  .popup-login.login {
+    top: 77px;
+    right: 58px;
   }
 }
 
@@ -149,8 +161,12 @@
   .breadcrumb {
     top: 11px;
   }
-  .header-container {
-    padding-top: 8px;
+  .header-container.nopd {
+    padding: 17px 16px;
+    align-items: center;
+  }
+  .header-container.pd {
+    padding: 6px 16px 1px;
     align-items: center;
   }
   .header-container::after {
@@ -159,6 +175,9 @@
   .header {
     position: relative;
     width: 100%;
+    padding-bottom: 0;
+  }
+  .header.pd {
     padding-bottom: 8px;
   }
   .header::after {
@@ -179,7 +198,10 @@
     top: 0;
     margin-right: 0;
   }
-  .login__text {
+  .nopd .login {
+    top: unset;
+  }
+  .login__text.login {
     margin-right: 0;
     font-size: 16px;
   }
@@ -258,8 +280,17 @@
   .footer-bottom {
     margin-top: 40px;
   }
-  .popup-login {
-    right: 0;
+  .popup-login.register {
+    top: 56px;
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  .popup-login.register .popup-login__wrap::before {
+    right: 27px;
+  }
+  .popup-login.login {
+    top: 50px;
+    right: 17px;
   }
 }
 
@@ -279,6 +310,14 @@
   }
   .popup-login__wrap {
     padding: 33px 24px 48px;
+  }
+  .popup-login.login {
+    left: 50% !important;
+    transform: translateX(-50%);
+    right: unset;
+  }
+  .popup-login.login .popup-login__wrap::before {
+    right: 13px;
   }
   .login-form-item__input {
     width: 208px;

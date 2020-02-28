@@ -1,89 +1,141 @@
-header.header
-    .container.header-container
-        |
-        |
-        .burger
-            span.burger-line.line__main
-            span.burger-line.line__middle
-            span.burger-line.line__main
-        .burger-menu
-            nav
-                ul.burger-menu-list
-                    li.active
-                        a(href="#").burger-menu-list__link.active Что анализирует сервис
-                    li
-                        a(href="#").burger-menu-list__link Как отозвать доступы
-                    li
-                        a(href="#").burger-menu-list__link О нас
-            .burger-menu-bottom
-                p.burger-menu-bottom__tel 8 495 118-43-66
-                p.burger-menu-bottom__time В будни с 9:00 до 18:00 (МСК +5)
-                .burger-menu-bottom-policy
-                    a(href="#") Политика конфиденциальности
-                    a(href="#") Пользовательское соглашение
-        |
-        |
-        a(href="../index.html").logo
-        |
-        |
-        .menu
-            ul.menu-list
-                li
-                    a(href="pug/analysis.html").menu__link Что анализирует сервис
-                li
-                    a(href="#").menu__link Как отозвать доступы
-                li
-                    a(href="pug/service.html").menu__link О нас
-        |
-        |
-        .login
-            a(href="#").login__text.register
-                span Вход
+- var register = true
+
+if register
+    header.header.pd
+        .container.header-container.pd
             |
             |
-            .popup-lk
-                .popup-lk__wrap
-                    ul.popup-lk-list
+            .burger
+                span.burger-line.line__main
+                span.burger-line.line__middle
+                span.burger-line.line__main
+            .burger-menu
+                nav
+                    ul.burger-menu-list
+                        li.active
+                            a(href="#").burger-menu-list__link.active Что анализирует сервис
                         li
-                            a(href="#").popup-lk-list__link Войти
+                            a(href="#").burger-menu-list__link Как отозвать доступы
                         li
-                            a(href="#").popup-lk-list__link.popup-lk-list__link--logout Выйти
+                            a(href="#").burger-menu-list__link О нас
+                .burger-menu-bottom
+                    p.burger-menu-bottom__tel 8 495 118-43-66
+                    p.burger-menu-bottom__time В будни с 9:00 до 18:00 (МСК +5)
+                    .burger-menu-bottom-policy
+                        a(href="#") Политика конфиденциальности
+                        a(href="#") Пользовательское соглашение
             |
             |
-            #login.popup-login
-                .popup-login__wrap
-                    |
-                    |
-                    .login__title Вход в личный кабинет
-                    |
-                    |
-                    form.login-form(action='#' method='post')
-                        .login-form-item
-                            label.login-form-item__label Мобильный телефон
-                            input.login-form-item__input.login-form-item__input--tel(type='text' placeholder='+7 000 000-00-00' name='tel')
-                            span.login-form-item__text.text-sms Пришлём SMS с кодом для входа
-                        .login-form-item.login-form__sms
-                            label.login-form-item__label Код из SMS
-                            input.login-form-item__input.login-form-item__input--sms(type='number' placeholder='0000' name='sms_code')
-                            span.login-form-item__text.text-more
-                                | Выслать код ещё раз через
-                                span.timer 20
-                                |  секунд
-                            a.send-more(href='#') Выслать код ещё раз
-                        button.login-form__btn.login-form__btn--js(type='submit' name='login') Войти
-                        p.login-form-item__text.text-policy
-                            | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
-                            a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
-                    |
-                    |
-                    .login-yandex
-                        p.login-yandex__text Для подготовки аудита, подключите рекламный аккаунт Яндекс
-                        form(action='#' method='post')
-                            button.login-form__btn Подключите...
-                            // <input id="file" type="file" class="login-yandex__btn" name="attach">
-                            // <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>
-                        p.audit__text.login-yandex__safe
-                            | Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.
+            a(href="../index.html").logo
+            |
+            |
+            .menu
+                ul.menu-list
+                    li
+                        a(href="pug/analysis.html").menu__link Что анализирует сервис
+                    li
+                        a(href="pug/access.html").menu__link Как отозвать доступы
+                    li
+                        a(href="pug/service.html").menu__link О нас
+            |
+            |
+            .login
+                a(href="#").login__text.register
+                    span Вход
+                |
+                |
+                .popup-lk
+                    .popup-lk__wrap
+                        ul.popup-lk-list
+                            li
+                                a(href="#").popup-lk-list__link Войти
+                            li
+                                a(href="#").popup-lk-list__link.popup-lk-list__link--logout Выйти
+else
+    header.header
+        .container.header-container.nopd
+            |
+            |
+            .burger
+                span.burger-line.line__main
+                span.burger-line.line__middle
+                span.burger-line.line__main
+            .burger-menu
+                nav
+                    ul.burger-menu-list
+                        li.active
+                            a(href="#").burger-menu-list__link.active Что анализирует сервис
+                        li
+                            a(href="#").burger-menu-list__link Как отозвать доступы
+                        li
+                            a(href="#").burger-menu-list__link О нас
+                .burger-menu-bottom
+                    p.burger-menu-bottom__tel 8 495 118-43-66
+                    p.burger-menu-bottom__time В будни с 9:00 до 18:00 (МСК +5)
+                    .burger-menu-bottom-policy
+                        a(href="#") Политика конфиденциальности
+                        a(href="#") Пользовательское соглашение
+            |
+            |
+            a(href="../index.html").logo
+            |
+            |
+            .menu
+                ul.menu-list
+                    li
+                        a(href="pug/analysis.html").menu__link Что анализирует сервис
+                    li
+                        a(href="pug/access.html").menu__link Как отозвать доступы
+                    li
+                        a(href="pug/service.html").menu__link О нас
+            |
+            |
+            .login
+                a(href="#").login__text.login
+                    span Вход
+                |
+                |
+                .popup-lk
+                    .popup-lk__wrap
+                        ul.popup-lk-list
+                            li
+                                a(href="#").popup-lk-list__link Войти
+                            li
+                                a(href="#").popup-lk-list__link.popup-lk-list__link--logout Выйти
+            //#login.popup-login
+            //    .popup-login__wrap
+            //        |
+            //        |
+            //        .login__title Вход в личный кабинет
+            //        |
+            //        |
+            //        form.login-form(action='#' method='post')
+            //            .login-form-item
+            //                label.login-form-item__label Мобильный телефон
+            //                input.login-form-item__input.login-form-item__input--tel(type='text' placeholder='+7 000 000-00-00' name='tel')
+            //                span.login-form-item__text.text-sms Пришлём SMS с кодом для входа
+            //            .login-form-item.login-form__sms
+            //                label.login-form-item__label Код из SMS
+            //                input.login-form-item__input.login-form-item__input--sms(type='number' placeholder='0000' name='sms_code')
+            //                span.login-form-item__text.text-more
+            //                    | Выслать код ещё раз через
+            //                    span.timer 20
+            //                    |  секунд
+            //                a.send-more(href='#') Выслать код ещё раз
+            //            button.login-form__btn.login-form__btn--js(type='submit' name='login') Войти
+            //            p.login-form-item__text.text-policy
+            //                | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+            //                a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+            //        |
+            //        |
+            //        .login-yandex
+            //            p.login-yandex__text Для подготовки аудита, подключите рекламный аккаунт Яндекс
+            //            form(action='#' method='post')
+            //                button.login-form__btn Подключите...
+            //                // <input id="file" type="file" class="login-yandex__btn" name="attach">
+            //                // <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>
+            //            p.audit__text.login-yandex__safe
+            //                | Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.
 
 
 

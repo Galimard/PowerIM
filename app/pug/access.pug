@@ -1,0 +1,60 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        title PowerIM
+        link(rel="stylesheet" href="../css/style.css")
+        link(rel="stylesheet" href="../css/slick.css")
+        link(rel="stylesheet" href="../css/slick-theme.css")
+    body
+        |
+        .wrapper
+            |
+            |
+            span.yandex
+            |
+            |
+            .content.content-nomain
+                |
+                //фон на главной
+                .content__wrap
+                    span.content__back
+                        svg(height="100%" viewBox="0 0 388 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                            title Rectangle
+                            desc Created with Sketch.
+                            g(id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd")
+                                path(d="M0,0 L158,0 L316.562801,132.68818 C401.098736,203.629381 412.19285,329.584034 341.357903,414.19408 L18,800 L0,800 L0,0 Z" id="Rectangle" fill="#412B9F")
+                |
+                |
+                include ../header
+                .access.bg__wrap
+                    .container
+                        .content-container
+                            h1.content-container__title.access__title Как отозвать доступы к&nbsp;вашему аккаунту от&nbsp;рекламной компании
+                            .access-slider
+                                .access-slider__wrap
+                                    .access-item
+                                        .access-item__wrap(data-title='1. Авторизуйтесь в&nbsp;яндекс аккаунте и&nbsp;перейдите на&nbsp;страницу «Паспорт»')
+                                            .access-item__anim
+                                                img(src='../img/1.jpg')
+                                        .access-item__text 1. Авторизуйтесь в&nbsp;яндекс аккаунте и&nbsp;перейдите на&nbsp;страницу «Паспорт»
+                                    .access-item
+                                        .access-item__wrap(data-title='2. Перейдите в&nbsp;раздел «Устройства,&nbsp;сервисы и&nbsp;программы»')
+                                            .access-item__anim
+                                                img(src='../img/2.jpg')
+                                        .access-item__text 2. Перейдите в&nbsp;раздел «Устройства,&nbsp;сервисы и&nbsp;программы»
+                                    .access-item
+                                        .access-item__wrap(data-title='3. В&nbsp;списке находим сервис «Power IM» и&nbsp;кликаем на&nbsp;кнопку «Удалить»')
+                                            .access-item__anim
+                                                img(src='../img/3.jpg')
+                                        .access-item__text 3. В&nbsp;списке находим сервис «Power IM» и&nbsp;кликаем на&nbsp;кнопку «Удалить»
+            include ../footer
+        .popup-overlay
+        script(src='../js/jquery-3.3.1.min.js')
+        script(src="../js/jquery.nicescroll.min.js")
+        script(src='../js/jquery.validate.min.js')
+        script(src='../js/jquery.mask.min.js')
+        script(src='../js/slick.min.js')
+        script(src='../js/script.js')
