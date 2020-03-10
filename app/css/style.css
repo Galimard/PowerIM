@@ -1877,8 +1877,11 @@ input::-webkit-inner-spin-button {
 .table-col-arrow.yes .arrow {
   display: block; }
 
+.info .icon {
+  display: inline-block;
+  position: relative; }
+
 .icon {
-  display: none;
   width: 18px;
   height: 18px;
   background: url("../img/info.svg") center center no-repeat;
@@ -1886,8 +1889,17 @@ input::-webkit-inner-spin-button {
   top: 4px;
   margin-left: 13px; }
 
+.info__description {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: -15px; }
+
 .icon:hover {
   background: url("../img/info1.svg") center center no-repeat; }
+
+.icon:hover .info__description {
+  display: block; }
 
 .icon-text {
   display: none;
@@ -2528,10 +2540,10 @@ input::-webkit-inner-spin-button {
   width: 100%; }
 
 .access .slick-dots {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;

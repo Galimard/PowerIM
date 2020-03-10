@@ -153,7 +153,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/pug/**/*.pug', gulp.parallel('pug')); // Наблюдение за pug файлами
+    gulp.watch('app/**/*.pug', gulp.parallel('pug')); // Наблюдение за pug файлами
     gulp.watch('app/sass/**/*.scss', gulp.parallel('sass')); // Наблюдение за sass файлами
     gulp.watch('app/js/**/*.js', gulp.parallel('scripts')); // Наблюдение за js файлами
     gulp.watch("app/*.html").on('change', browserSync.reload); //наблюдение за html файлами
