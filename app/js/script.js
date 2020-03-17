@@ -233,6 +233,7 @@ $(document).ready(function () {
             var title = $(slider.$slides[i]).find('[data-title]').data('title');
             return '<a class="pager__item"> '+title+' </a>';
         },
+        appendDots: $('.dots'),
         responsive: [
             {
                 breakpoint: 768,
