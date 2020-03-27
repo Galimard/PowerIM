@@ -12,10 +12,8 @@ head
         .popup-login__wrap
             |
             |
-            .login__title Вход в личный кабинет
-            |
-            |
             form.login-form(action='#' method='post')
+                .login__title Вход в личный кабинет
                 .login-form-item
                     label.login-form-item__label Мобильный телефон
                     input.login-form-item__input.login-form-item__input--tel(type='text' placeholder='+7 000 000-00-00' name='tel')
@@ -32,16 +30,72 @@ head
                 p.login-form-item__text.text-policy
                     | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
                     a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+                a.login-form__email-link.email-link--js(href="#") Войти через электронную почту
             |
             |
             .login-yandex
+                .login__title Вход в личный кабинет
                 p.login-yandex__text Для подготовки аудита, подключите рекламный аккаунт Яндекс
                 form(action='#' method='post')
                     button.login-form__btn Подключите...
-                    // <input id="file" type="file" class="login-yandex__btn" name="attach">
-                    // <label for="file" class="login-form__btn login-yandex-btn__label">Прикрепить...</label>
                 p.audit__text.login-yandex__safe
                     | Безопасное соединение по шлюзу ООО «Яндекс» через протокол шифрования SSL. Все логины и&nbsp;пароли остаются на стороне Яндекс.
+                a(href='#').login-form__back.login-back ←
+                    span Назад
+            |
+            |
+            form.login-email(action='#' method='post')
+                .login__title.login-email__title Вход в личный кабинет
+                .login-form-item.email-item-1
+                    label.login-form-item__label Электронная почта
+                    input.login-form-item__input.login-form-item__input--email(type='text' placeholder='name@yandex.ru' name='email')
+                .login-form-item.email-item-2
+                    label.login-form-item__label Пароль
+                    input.login-form-item__input.login-form-item__input--psw(type='text' name='password')
+                    a(href="#").login-form-item__text.text-psw Восстановить пароль
+                button.login-form__btn.login-form__btn--js(type='submit' name='login') Войти
+                p.login-form-item__text.text-policy
+                    | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+                    a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+                p.text-auth Впервые на сайте?
+                    a.login-form__email-link.text-email__link.email-register--js(href='#') Зарегистрируйтесь
+                a.login-form__email-link.tel-link--js(href="#") Войти через номер моб. телефона
+            |
+            |
+            form.login-recovery(action='#' method='post')
+                .login__title.login-recovery__title Восстановление пароля
+                .login-form-item.login-recovery-item
+                    label.login-form-item__label Электронная почта
+                    input.login-form-item__input.login-form-item__input--email(type='text' placeholder='name@yandex.ru' name='email')
+                    span.login-form-item__text.text-newpsw Пришлём новый пароль
+                    button.login-form__btn.login-recovery__btn.login-recovery__btn--js(type='submit' name='send') Отправить
+                    p.login-form-item__text.text-policy
+                        | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+                        a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+                    a(href='#').login-form__back.login-back2 ←
+                        span Назад
+            |
+            |
+            form.login-register(action='#' method='post')
+                .login__title Регистрация
+                .login-form-item.login-register-item
+                    label.login-form-item__label Электронная почта
+                    input.login-form-item__input.login-form-item__input--email(type='text' placeholder='name@yandex.ru' name='email')
+                .login-form-item.login-register-item
+                    label.login-form-item__label Пароль
+                    input.login-form-item__input.login-form-item__input--psw(type='text' name='password')
+                .login-form-item.login-register-item--last
+                    label.login-form-item__label Пароль ещё раз
+                    input.login-form-item__input.login-form-item__input--psw(type='text' name='password2')
+                button.login-form__btn.login-form__btn--js(type='submit' name='login') Войти
+                p.login-form-item__text.text-policy
+                    | Нажимая на кнопку вы подтверждаете, что&nbsp;прочитали и соглашаетесь
+                    a.login-form__link(href='#' target='_blank') с политикой обработки персональных данных
+                p.text-auth Уже есть аккаунт?
+                    a.login-form__email-link.text-email__link(href='#') Авторизуйтесь
+                a.login-form__email-link(href="#") Войти через номер моб. телефона
+                |
+                |
     span.yandex
     .content
         //фон на главной

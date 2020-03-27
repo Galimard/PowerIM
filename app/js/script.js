@@ -25,6 +25,50 @@ $(document).ready(function () {
         $(".popup-overlay").fadeOut(200);
     });
 
+    //---------------------login back, back2-----------------
+    $('.login-back').on('click', function () {
+        $('.login-yandex').fadeOut(200);
+        setTimeout(function () {
+            $('.login-form').fadeIn(200);
+            $('.login-form-item__input').val('').removeClass('valid');
+            $('.login-form-item__input--tel').focus();
+            $('.login-form-item').removeClass('valid');
+
+        }, 300);
+    });
+
+    //----------------------------login email--------------------------
+    $('.email-link--js').on('click', function (e) {
+        $('.login-form').fadeOut(200);
+        setTimeout(function () {
+            $('.login-email').fadeIn(200);
+        }, 300);
+    });
+
+    //---------------------------login tel-----------------------
+    $('.tel-link--js').on('click', function (e) {
+        $('.login-email').fadeOut(200);
+        setTimeout(function () {
+            $('.login-form').fadeIn(200);
+        }, 300);
+    });
+
+    //--------------------------login recovery password----------------------------
+    $('.text-psw').on('click', function () {
+        $('.login-email, .login-register').fadeOut(200);
+        setTimeout(function () {
+            $('.login-recovery').fadeIn(200);
+        }, 300);
+    });
+
+    //------------------------------login email register------------------------------
+    $('.email-register--js').on('click', function () {
+        $('.login-email').fadeOut(200);
+        setTimeout(function () {
+            $('.login-register').fadeIn(200);
+        }, 300);
+    });
+
     //------------------------burger------------------
 
     $('.burger').on('click', function () {
@@ -125,30 +169,6 @@ $(document).ready(function () {
         } else {
             $(".employee-list, .employee-sublist").getNiceScroll().remove();
         }
-    });
-
-    //-----------------------------------всплывашка audit-detail-----------------------------------
-    $('.icon').on('click', function () {
-        var parent = $(this).parent('.info');
-        var positionTop = Math.abs($(parent).position().top - 100),
-            positionLeft1 = Math.abs($(this).position().left),
-            positionLeft2 = 0,
-            posLeft = 0;
-
-        if($(parent).hasClass('table-col-res')) {
-            positionLeft2 = Math.abs($(parent).position().left);
-            posLeft = (624 + positionLeft1);
-            console.log(positionLeft1);
-            console.log(posLeft);
-            $('.icon-text').css({'top': positionTop, 'left': '624px'});
-        }
-
-        if($(parent).hasClass('table-col-name')) {
-            positionLeft1 = Math.abs($(this).position().left);
-            // posLeft = positionLeft1 + positionLeft2;
-            $('.icon-text').css({'top': positionTop, 'left': positionLeft1});
-        }
-
     });
 
     //----------------------------------------table audit выпадашка-----------------------------------------
