@@ -145,13 +145,13 @@
   display: block;
 }
 
-//.info .icon {
-//  display: inline-block;
-//  position: relative;
-//}
+.info .icon {
+  display: inline-block;
+  position: relative;
+}
 
 .icon {
-  display: none;
+  //display: none;
   width: 18px;
   height: 18px;
   background: url("../img/info.svg") center center no-repeat;
@@ -160,12 +160,23 @@
   margin-left: 13px;
 }
 
+.info__description {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: -15px;
+}
+
 .icon:hover {
   background: url("../img/info1.svg") center center no-repeat;
 }
 
-.icon-text {
+.icon:hover .info__description {
   display: block;
+}
+
+.icon-text {
+  display: none;
   width: 360px;
   height: 88px;
   border-radius: 9px;
